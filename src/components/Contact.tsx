@@ -27,7 +27,7 @@ const contactInfo = [
 
 export const Contact = () => {
   return (
-    <section className="py-24 bg-gradient-soft">
+    <section id="contacto" className="py-24 bg-gradient-soft">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-foreground">

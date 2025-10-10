@@ -1,43 +1,53 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Sparkles, Droplet, Heart, Star } from "lucide-react";
+import { Sparkles, Hand, Eye, Pipette, Scissors, Footprints } from "lucide-react";
 
 const services = [
   {
+    icon: Hand,
+    title: "Masajes",
+    description: "Relájate con nuestros masajes terapéuticos y relajantes, diseñados para liberar tensiones y mejorar tu bienestar.",
+  },
+  {
     icon: Sparkles,
-    title: "Tratamientos Faciales",
-    description: "Revitaliza tu piel con nuestros tratamientos faciales personalizados según tus necesidades y tipo de piel.",
+    title: "Faciales",
+    description: "Tratamientos faciales personalizados que revitalizan tu piel, mejorando su textura, luminosidad y salud.",
   },
   {
-    icon: Droplet,
-    title: "Spa & Bienestar",
-    description: "Disfruta de nuestros lujosos tratamientos de spa diseñados para rejuvenecer tu cuerpo y alma.",
+    icon: Pipette,
+    title: "Micropigmentación",
+    description: "Realza tu belleza natural con técnicas de micropigmentación de cejas, labios y delineado de ojos.",
   },
   {
-    icon: Heart,
-    title: "Servicios de Belleza",
-    description: "Desde maquillaje profesional hasta extensiones de pestañas, realza tu belleza natural con nuestros servicios expertos.",
+    icon: Eye,
+    title: "Pestañas",
+    description: "Extensiones y lifting de pestañas para una mirada impactante y natural que realza tus ojos.",
   },
   {
-    icon: Star,
-    title: "Cuidado Premium",
-    description: "Experimenta tratamientos de vanguardia con productos premium para resultados duraderos.",
+    icon: Scissors,
+    title: "Manicura",
+    description: "Cuidado completo de manos y uñas con esmaltes de alta calidad y diseños personalizados.",
+  },
+  {
+    icon: Footprints,
+    title: "Pedicura",
+    description: "Tratamiento profesional de pies para mantenerlos suaves, saludables y perfectamente cuidados.",
   },
 ];
 
 export const Services = () => {
   return (
-    <section className="py-24 bg-gradient-soft">
+    <section id="servicios" className="py-24 bg-gradient-soft">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-foreground">
             Nuestros Servicios
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Descubre nuestra gama de servicios premium de belleza y bienestar, cada uno elaborado con cuidado y experiencia.
+            Descubre nuestra gama completa de servicios de belleza y bienestar, cada uno diseñado para realzar tu belleza natural.
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <Card 
               key={index} 
