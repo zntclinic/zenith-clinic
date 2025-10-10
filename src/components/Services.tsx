@@ -1,5 +1,9 @@
 import masajeImage from "@/assets/masaje.jpg";
 import facialesImage from "@/assets/faciales.jpg";
+import microImage from "@/assets/micropigmentacion.jpg";
+import manicuraImage from "@/assets/manicura.jpg";
+import pedicuraImage from "@/assets/pedicura.jpg";
+import pestanasImage from "@/assets/pestanhas.jpg";
 
 const serviceCategories = [
   {
@@ -61,7 +65,7 @@ const serviceCategories = [
   },
   {
     category: "Micropigmentación",
-    image: null,
+    image: microImage,
     treatments: [
       {
         name: "Cejas Pelo a Pelo",
@@ -82,7 +86,7 @@ const serviceCategories = [
   },
   {
     category: "Pestañas",
-    image: null,
+    image: pestanasImage,
     treatments: [
       {
         name: "Extensiones de Pestañas",
@@ -103,7 +107,7 @@ const serviceCategories = [
   },
   {
     category: "Manicura",
-    image: null,
+    image: manicuraImage,
     treatments: [
       {
         name: "Manicura Clásica",
@@ -124,7 +128,7 @@ const serviceCategories = [
   },
   {
     category: "Pedicura",
-    image: null,
+    image: pedicuraImage,
     treatments: [
       {
         name: "Pedicura Clásica",
