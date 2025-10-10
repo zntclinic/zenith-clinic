@@ -4,23 +4,23 @@ import { Sparkles, Droplet, Heart, Star } from "lucide-react";
 const services = [
   {
     icon: Sparkles,
-    title: "Facial Treatments",
-    description: "Revitalize your skin with our signature facials, customized to your unique needs and skin type.",
+    title: "Tratamientos Faciales",
+    description: "Revitaliza tu piel con nuestros tratamientos faciales personalizados según tus necesidades y tipo de piel.",
   },
   {
     icon: Droplet,
-    title: "Spa & Wellness",
-    description: "Indulge in our luxurious spa treatments designed to rejuvenate your body and soul.",
+    title: "Spa & Bienestar",
+    description: "Disfruta de nuestros lujosos tratamientos de spa diseñados para rejuvenecer tu cuerpo y alma.",
   },
   {
     icon: Heart,
-    title: "Beauty Services",
-    description: "From makeup artistry to lash extensions, enhance your natural beauty with our expert services.",
+    title: "Servicios de Belleza",
+    description: "Desde maquillaje profesional hasta extensiones de pestañas, realza tu belleza natural con nuestros servicios expertos.",
   },
   {
     icon: Star,
-    title: "Premium Skincare",
-    description: "Experience cutting-edge skincare treatments with premium products for lasting results.",
+    title: "Cuidado Premium",
+    description: "Experimenta tratamientos de vanguardia con productos premium para resultados duraderos.",
   },
 ];
 
@@ -30,10 +30,10 @@ export const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Our Services
+            Nuestros Servicios
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover our range of premium beauty and wellness services, each crafted with care and expertise.
+            Descubre nuestra gama de servicios premium de belleza y bienestar, cada uno elaborado con cuidado y experiencia.
           </p>
         </div>
         

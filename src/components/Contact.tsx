@@ -5,23 +5,23 @@ import { MapPin, Phone, Mail, Clock } from "lucide-react";
 const contactInfo = [
   {
     icon: MapPin,
-    title: "Visit Us",
-    details: "123 Beauty Boulevard, Elegance District",
+    title: "Visítanos",
+    details: "Av. da Habana, 26, Bajo Derecha, 32003 Ourense, España",
   },
   {
     icon: Phone,
-    title: "Call Us",
-    details: "+1 (555) 123-4567",
+    title: "Llámanos",
+    details: "+34 628 52 16 62",
   },
   {
     icon: Mail,
-    title: "Email Us",
-    details: "hello@luxebeauty.studio",
+    title: "Escríbenos",
+    details: "info@zenithclinic.es",
   },
   {
     icon: Clock,
-    title: "Opening Hours",
-    details: "Mon-Sat: 9AM-8PM, Sun: 10AM-6PM",
+    title: "Horario",
+    details: "Lun-Vie: 10:00-20:00, Sáb: 10:00-14:00",
   },
 ];
 
@@ -31,10 +31,10 @@ export const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-4 text-foreground">
-            Get In Touch
+            Contacto
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to experience luxury? Book your appointment today and let us pamper you.
+            ¿Lista para experimentar el lujo? Reserva tu cita hoy y déjanos mimarte.
           </p>
         </div>
         
@@ -53,8 +53,13 @@ export const Contact = () => {
         </div>
         
         <div className="text-center">
-          <Button variant="elegant" size="lg" className="font-semibold">
-            Book Your Appointment
+          <Button 
+            variant="elegant" 
+            size="lg" 
+            className="font-semibold"
+            onClick={() => window.open('https://booksy.com/es-es/rwg/153333_zenith-clinic_medicina-estetica_65288_ourense?hl=es-DE&gei=tQHpaP6hB66oxc8P4srX0Qo&rwg_token=ACgRB3e5lvnMzzILBD_P9qgArcYnzOFL65huPYfWsJVgsq5hSxu_StI2RxM6me9s3CH23uA8drCaHINN9CZ0wZz01s1RZi3Q8Q%3D%3D', '_blank')}
+          >
+            Reservar Cita Online
           </Button>
         </div>
       </div>

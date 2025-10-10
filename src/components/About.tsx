@@ -5,32 +5,32 @@ export const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="font-playfair text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              Experience Luxury Beauty
+              Belleza de Lujo
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                At Luxe Beauty Studio, we believe that beauty is more than skin deep. It's about feeling confident, radiant, and empowered in your own skin.
+                En Zenith Clinic, creemos que la belleza va más allá de la piel. Se trata de sentirse segura, radiante y empoderada.
               </p>
               <p>
-                Our team of expert aestheticians and beauty professionals are dedicated to providing you with personalized treatments using the finest products and latest techniques in the industry.
+                Nuestro equipo de expertos esteticistas y profesionales de la belleza se dedica a brindarte tratamientos personalizados utilizando los mejores productos y las técnicas más avanzadas de la industria.
               </p>
               <p>
-                Step into our serene sanctuary and let us help you discover your most beautiful self.
+                Entra en nuestro santuario sereno y déjanos ayudarte a descubrir tu yo más hermoso.
               </p>
             </div>
             
             <div className="grid grid-cols-3 gap-6 mt-12">
               <div className="text-center">
                 <div className="font-playfair text-4xl font-bold text-primary mb-2">10+</div>
-                <div className="text-sm text-muted-foreground">Years Experience</div>
+                <div className="text-sm text-muted-foreground">Años de Experiencia</div>
               </div>
               <div className="text-center">
                 <div className="font-playfair text-4xl font-bold text-primary mb-2">5K+</div>
-                <div className="text-sm text-muted-foreground">Happy Clients</div>
+                <div className="text-sm text-muted-foreground">Clientas Felices</div>
               </div>
               <div className="text-center">
                 <div className="font-playfair text-4xl font-bold text-primary mb-2">50+</div>
-                <div className="text-sm text-muted-foreground">Services</div>
+                <div className="text-sm text-muted-foreground">Servicios</div>
               </div>
             </div>
           </div>
