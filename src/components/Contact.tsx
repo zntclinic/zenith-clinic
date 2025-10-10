@@ -6,7 +6,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Visítanos",
-    details: "Av. da Habana 26, Bajo Derecha, 32003 Ourense, España",
+    details: "Av. da Habana 26, 32003 Ourense, España",
   },
   {
     icon: Phone,
