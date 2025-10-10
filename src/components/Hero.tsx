@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock } from "lucide-react";
+import zenithVideo from "@/assets/zenith-video.mp4";
 
 // WhatsApp Icon Component
 const WhatsAppIcon = ({ size = 20 }: { size?: number }) => (
@@ -25,7 +26,7 @@ export const Hero = () => {
         muted
         playsInline
       >
-        <source src="/zenith-video.mp4" type="video/mp4" />
+        <source src={zenithVideo} type="video/mp4" />
       </video>
 
       {/* Overlay */}
