@@ -3,7 +3,6 @@ import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
 import { About } from "@/components/About";
 import { Contact } from "@/components/Contact";
-import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -23,7 +22,6 @@ const Index = () => {
           </div>
         </footer>
       </main>
-      <WhatsAppButton />
     </>
   );
 };
