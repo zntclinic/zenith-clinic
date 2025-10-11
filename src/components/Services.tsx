@@ -89,7 +89,7 @@ const serviceCategories = [
     image: pestanasImage,
     treatments: [
       {
-        name: "Extensiones de Pestañas",
+        name: "Pestañas Técnica Clásica",
         description: "Aplicación de extensiones para conseguir pestañas más largas y voluminosas.",
         price: "50€"
       },
