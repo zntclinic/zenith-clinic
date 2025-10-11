@@ -67,7 +67,7 @@ export const Hero = () => {
       </div>
 
       {/* Address and Schedule - Centered on mobile, Right on desktop */}
-      <div className="absolute bottom-8 sm:bottom-12 md:bottom-16 left-2 right-2 sm:left-auto sm:right-4 md:right-8 sm:transform-none z-20 text-white">
+      <div className="absolute bottom-8 sm:bottom-12 md:bottom-16 left-2 right-2 sm:left-auto sm:right-16 md:right-24 sm:transform-none z-20 text-white">
         <div className="flex flex-col sm:block text-center sm:text-right max-w-none sm:max-w-md">
           <div className="flex items-center justify-center sm:justify-end gap-2 sm:gap-3 mb-2 sm:mb-3 whitespace-nowrap">
             <MapPin size={18} className="text-white/80 flex-shrink-0 sm:w-5 sm:h-5 md:w-6 md:h-6" />
