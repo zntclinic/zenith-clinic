@@ -4,6 +4,8 @@ import microImage from "@/assets/micropigmentacion.jpg";
 import manicuraImage from "@/assets/manicura.jpg";
 import pedicuraImage from "@/assets/pedicura.jpg";
 import pestanasImage from "@/assets/pestanhas.jpg";
+import tatuajeImage from "@/assets/tatuaje.jpeg";
+import cejasImage from "@/assets/cejas.jpg";
 
 const serviceCategories = [
   {
@@ -113,28 +115,232 @@ const serviceCategories = [
     image: facialesImage,
     treatments: [
       {
-        name: "Limpieza Facial Profunda",
+        name: "Limpieza Básica",
         description: "Tratamiento completo de limpieza que elimina impurezas y deja la piel radiante.",
+        price: "30€",
+        duration: "30 min"
+      },
+      {
+        name: "Limpieza Profunda",
+        description: "Tratamiento avanzado que limpia, exfolia e hidrata la piel en profundidad.",
         price: "60€",
         duration: "60 min"
+      }
+    ]
+  },
+  {
+    category: "Láser",
+    image: masajeImage, // You can change this to a laser-specific image later
+    treatments: [
+      {
+        name: "Consulta Láser",
+        description: "Consulta gratuita para evaluar tu tipo de piel y planificar el tratamiento de depilación láser más adecuado.",
+        price: "Gratis",
+        duration: "10 min"
       },
       {
-        name: "Hidrafacial",
-        description: "Tratamiento avanzado que limpia, exfolia e hidrata la piel en profundidad.",
-        price: "80€",
-        duration: "60 min"
+        name: "Ingle Normal",
+        description: "Depilación láser de la zona del bikini en línea normal para una piel suave y sin vello.",
+        price: "45€",
+        duration: "15 min"
       },
       {
-        name: "Peeling Químico",
-        description: "Exfoliación química que renueva la piel y mejora su textura y luminosidad.",
+        name: "Ingle Completa + Peri",
+        description: "Depilación láser completa de la zona del bikini incluyendo área perianal para máxima comodidad.",
+        price: "55€",
+        duration: "15 min"
+      },
+      {
+        name: "Axilas",
+        description: "Depilación láser de las axilas para eliminar el vello de forma permanente y mantener la zona suave.",
+        price: "30€",
+        duration: "15 min"
+      },
+      {
+        name: "Medias Piernas",
+        description: "Depilación láser de medias piernas (inferior o superior) para piernas lisas y sin vello.",
+        price: "65€",
+        duration: "20 min"
+      },
+      {
+        name: "Pierna Entera",
+        description: "Depilación láser completa de ambas piernas para una piel suave de los muslos hasta los tobillos.",
+        price: "98€",
+        duration: "30 min"
+      },
+      {
+        name: "Brazos Completos",
+        description: "Depilación láser de brazos completos para eliminar el vello de antebrazos y brazos superiores.",
         price: "70€",
+        duration: "25 min"
+      },
+      {
+        name: "Dorsal",
+        description: "Depilación láser de la zona dorsal para una espalda suave y libre de vello.",
+        price: "50€",
+        duration: "25 min"
+      },
+      {
+        name: "Lumbar",
+        description: "Depilación láser de la zona lumbar para eliminar el vello de la parte baja de la espalda.",
+        price: "50€",
+        duration: "25 min"
+      },
+      {
+        name: "Abdomen",
+        description: "Depilación láser del abdomen para una piel lisa y suave en la zona del vientre.",
+        price: "50€",
+        duration: "25 min"
+      },
+      {
+        name: "Pecho",
+        description: "Depilación láser del pecho para eliminar el vello y mantener la zona suave.",
+        price: "50€",
+        duration: "25 min"
+      },
+      {
+        name: "Hombros",
+        description: "Depilación láser de los hombros para una piel suave y libre de vello.",
+        price: "50€",
+        duration: "25 min"
+      },
+      {
+        name: "Glúteos",
+        description: "Depilación láser de los glúteos para una piel suave y sin vello en esta zona.",
+        price: "50€",
+        duration: "25 min"
+      },
+      {
+        name: "Medios Brazos",
+        description: "Depilación láser de medios brazos (hasta el codo) para antebrazos suaves.",
+        price: "50€",
+        duration: "25 min"
+      },
+      {
+        name: "Facial Completo",
+        description: "Depilación láser facial completa para eliminar el vello no deseado del rostro.",
+        price: "50€",
+        duration: "20 min"
+      },
+      {
+        name: "Labio",
+        description: "Depilación láser del labio superior para eliminar el vello no deseado.",
+        price: "20€",
+        duration: "15 min"
+      },
+      {
+        name: "Mentón",
+        description: "Depilación láser del mentón para eliminar el vello no deseado de esta zona.",
+        price: "20€",
+        duration: "15 min"
+      },
+      {
+        name: "Manos",
+        description: "Depilación láser de las manos para eliminar el vello dorsal y mantener las manos suaves.",
+        price: "20€",
+        duration: "15 min"
+      },
+      {
+        name: "Pies",
+        description: "Depilación láser de los pies para eliminar el vello del dorso y mantener los pies suaves.",
+        price: "20€",
+        duration: "15 min"
+      },
+      {
+        name: "Perianal",
+        description: "Depilación láser de la zona perianal para máxima higiene y comodidad.",
+        price: "20€",
+        duration: "15 min"
+      },
+      {
+        name: "Areolas",
+        description: "Depilación láser de las areolas para eliminar el vello no deseado de esta zona sensible.",
+        price: "20€",
+        duration: "15 min"
+      },
+      {
+        name: "Labio + Mentón",
+        description: "Depilación láser combinada de labio superior y mentón para una zona facial completamente suave.",
+        price: "35€",
+        duration: "15 min"
+      },
+      {
+        name: "Mentón Prolongado",
+        description: "Depilación láser extendida del mentón para cubrir un área más amplia.",
+        price: "40€",
+        duration: "15 min"
+      },
+      {
+        name: "Piernas Enteras + Ingles + Axilas",
+        description: "Tratamiento completo de depilación láser que incluye piernas enteras, ingles y axilas.",
+        price: "140€",
         duration: "45 min"
       },
       {
-        name: "Radiofrecuencia Facial",
-        description: "Tratamiento anti-edad que estimula el colágeno y reafirma la piel del rostro.",
-        price: "90€",
-        duration: "60 min"
+        name: "Piernas Enteras + Ingle Normal",
+        description: "Depilación láser de piernas enteras combinada con ingle en línea normal.",
+        price: "130€",
+        duration: "45 min"
+      },
+      {
+        name: "Piernas Enteras + Axilas",
+        description: "Depilación láser de piernas enteras combinada con axilas para máxima comodidad.",
+        price: "110€",
+        duration: "35 min"
+      },
+      {
+        name: "Ingle Normal + Axilas",
+        description: "Depilación láser combinada de ingle normal y axilas para una zona íntima y axilas suaves.",
+        price: "58€",
+        duration: "20 min"
+      },
+      {
+        name: "Ingle Completa + Axilas",
+        description: "Depilación láser de ingle completa combinada con axilas para máxima higiene.",
+        price: "68€",
+        duration: "25 min"
+      },
+      {
+        name: "Medias Piernas + Ingles + Axilas",
+        description: "Depilación láser de medias piernas combinada con ingles y axilas.",
+        price: "115€",
+        duration: "35 min"
+      },
+      {
+        name: "Medias Piernas + Ingles",
+        description: "Depilación láser de medias piernas combinada con ingles para mayor comodidad.",
+        price: "95€",
+        duration: "30 min"
+      },
+      {
+        name: "Medias Piernas + Axilas",
+        description: "Depilación láser de medias piernas combinada con axilas para un tratamiento completo.",
+        price: "75€",
+        duration: "30 min"
+      },
+      {
+        name: "Espalda + Hombros",
+        description: "Depilación láser combinada de espalda y hombros para una zona superior completamente suave.",
+        price: "80€",
+        duration: "30 min"
+      },
+      {
+        name: "Brazos + Hombros + Axilas",
+        description: "Depilación láser completa de brazos, hombros y axilas para una zona superior sin vello.",
+        price: "100€",
+        duration: "30 min"
+      },
+      {
+        name: "Tórax + Espalda + Brazos + Axilas",
+        description: "Tratamiento completo de depilación láser de toda la zona superior del cuerpo.",
+        price: "190€",
+        duration: "45 min"
+      },
+      {
+        name: "Brazos + Hombros",
+        description: "Depilación láser de brazos completos combinada con hombros para mayor cobertura.",
+        price: "85€",
+        duration: "35 min"
       }
     ]
   },
@@ -143,22 +349,28 @@ const serviceCategories = [
     image: microImage,
     treatments: [
       {
-        name: "Cejas Pelo a Pelo",
-        description: "Técnica de micropigmentación que crea cejas naturales con efecto pelo a pelo.",
-        price: "200€",
+        name: "Eyeliner (línea entre pestañas)",
+        description: "Micropigmentación de línea de ojos entre las pestañas para un delineado permanente y natural.",
+        price: "350€",
         duration: "120 min"
       },
       {
-        name: "Delineado de Ojos",
-        description: "Micropigmentación del contorno de ojos para una mirada más definida y expresiva.",
-        price: "180€",
+        name: "Micropigmentación Labios/Cejas (1ª Sesión)",
+        description: "Primera sesión de micropigmentación para labios o cejas con diseño personalizado y color natural.",
+        price: "350€",
+        duration: "120 min"
+      },
+      {
+        name: "Repaso Micropigmentación (Al Mes)",
+        description: "Repaso gratuito de micropigmentación realizado al mes para mantener el color y la forma perfectos.",
+        price: "Gratis",
+        duration: "60 min"
+      },
+      {
+        name: "Repaso Anual Micropigmentación",
+        description: "Repaso gratuito anual de micropigmentación con descuentos según tiempo transcurrido desde la última sesión.",
+        price: "Gratis",
         duration: "90 min"
-      },
-      {
-        name: "Perfilado de Labios",
-        description: "Definición y color permanente de labios para un resultado natural y duradero.",
-        price: "220€",
-        duration: "120 min"
       }
     ]
   },
@@ -167,21 +379,39 @@ const serviceCategories = [
     image: pestanasImage,
     treatments: [
       {
-        name: "Pestañas Técnica Clásica",
-        description: "Aplicación de extensiones para conseguir pestañas más largas y voluminosas.",
-        price: "50€",
+        name: "Pestañas Técnica Clásica (1ª Puesta)",
+        description: "Primera aplicación de extensiones de pestañas con técnica clásica para conseguir mayor longitud y volumen.",
+        price: "70€",
+        duration: "150 min"
+      },
+      {
+        name: "Pestañas Efecto Rímel/Mojado (1ª Puesta)",
+        description: "Primera aplicación de extensiones con efecto rímel o mojado para una mirada intensa y definida.",
+        price: "75€",
+        duration: "150 min"
+      },
+      {
+        name: "Repaso Pestañas Efecto Rímel/Mojado (3 Semanas)",
+        description: "Repaso de extensiones con efecto rímel/mojado cada 3 semanas para mantener el resultado perfecto.",
+        price: "55€",
         duration: "90 min"
       },
       {
-        name: "Lifting de Pestañas",
-        description: "Tratamiento que curva y alarga las pestañas naturales de forma duradera.",
-        price: "40€",
-        duration: "60 min"
+        name: "Pestañas Volumen 2D/3D/Fibra Tecnológica",
+        description: "Aplicación de extensiones con técnica de volumen 2D/3D o fibra tecnológica para máxima densidad.",
+        price: "80€",
+        duration: "150 min"
       },
       {
-        name: "Tinte de Pestañas",
-        description: "Coloración de pestañas para intensificar la mirada de forma natural.",
-        price: "20€",
+        name: "Repaso Pestañas Volumen 2D/3D/Fibra Tecnológica",
+        description: "Repaso de extensiones con volumen 2D/3D cada 3 semanas para mantener la densidad y forma.",
+        price: "60€",
+        duration: "90 min"
+      },
+      {
+        name: "Retirada de Extensiones",
+        description: "Retirada profesional de extensiones de pestañas de forma segura y sin dañar las pestañas naturales.",
+        price: "15€",
         duration: "30 min"
       }
     ]
@@ -191,22 +421,52 @@ const serviceCategories = [
     image: manicuraImage,
     treatments: [
       {
-        name: "Manicura Clásica",
-        description: "Cuidado completo de manos y uñas con esmaltado tradicional.",
-        price: "25€",
+        name: "Esmaltado Semipermanente",
+        description: "Esmaltado semipermanente de larga duración que mantiene el brillo y color perfecto hasta 3 semanas.",
+        price: "30€",
+        duration: "90 min"
+      },
+      {
+        name: "Arreglo Uña Rota",
+        description: "Reparación profesional de uñas rotas o dañadas para restaurar su forma y resistencia.",
+        price: "6€",
+        duration: "15 min"
+      },
+      {
+        name: "Decoración Elaborada",
+        description: "Decoración artística elaborada por uña para diseños únicos y personalizados.",
+        price: "1€/uña",
+        duration: "5 min"
+      },
+      {
+        name: "Esmaltado Semipermanente Francesa",
+        description: "Esmaltado semipermanente con diseño francés clásico y elegante de larga duración.",
+        price: "35€",
+        duration: "105 min"
+      },
+      {
+        name: "Retirar Semipermanente",
+        description: "Retirada profesional del esmalte semipermanente sin dañar la uña natural.",
+        price: "10€",
+        duration: "20 min"
+      },
+      {
+        name: "Retirar Acrygel",
+        description: "Retirada profesional del acrílico y gel sin dañar la uña natural.",
+        price: "12€",
         duration: "30 min"
       },
       {
-        name: "Manicura Semipermanente",
-        description: "Manicura con esmalte de larga duración que mantiene el brillo hasta 3 semanas.",
-        price: "35€",
-        duration: "45 min"
+        name: "Retirar + Limar Semipermanente",
+        description: "Retirada y limado profesional del esmalte semipermanente para preparar las uñas.",
+        price: "14€",
+        duration: "30 min"
       },
       {
-        name: "Nail Art",
-        description: "Diseños artísticos personalizados en uñas para un look único y creativo.",
-        price: "45€",
-        duration: "60 min"
+        name: "Retirar + Limar Acr+gel",
+        description: "Retirada y limado profesional del acrílico y gel para preparar las uñas para un nuevo tratamiento.",
+        price: "16€",
+        duration: "35 min"
       }
     ]
   },
@@ -215,22 +475,52 @@ const serviceCategories = [
     image: pedicuraImage,
     treatments: [
       {
-        name: "Pedicura Clásica",
-        description: "Cuidado completo de pies y uñas con exfoliación e hidratación.",
-        price: "30€",
-        duration: "45 min"
-      },
-      {
-        name: "Pedicura Spa",
-        description: "Tratamiento relajante de pies con masaje y productos premium.",
-        price: "45€",
-        duration: "60 min"
-      },
-      {
-        name: "Tratamiento de Callos",
-        description: "Eliminación profesional de callos y durezas para pies suaves.",
+        name: "Pedicura Básica",
+        description: "Cuidado básico de pies y uñas con limpieza, limado y esmaltado tradicional.",
         price: "25€",
+        duration: "40 min"
+      },
+      {
+        name: "Pedicura Talones Secos",
+        description: "Tratamiento especializado para talones secos con limpieza con torno, exfoliación e hidratación profunda.",
+        price: "30€",
+        duration: "50 min"
+      },
+      {
+        name: "Pedicura Completa",
+        description: "Tratamiento completo de pedicura con limpieza con torno, exfoliación, hidratación y esmaltado semipermanente.",
+        price: "40€",
+        duration: "120 min"
+      }
+    ]
+  },
+  {
+    category: "Tatuaje",
+    image: tatuajeImage,
+    treatments: [
+      {
+        name: "Consulta previa tatuaje",
+        description: "Consulta gratuita previa para diseñar y planificar tu tatuaje personalizado con nuestros profesionales.",
+        price: "Gratis",
+        duration: "10 min"
+      }
+    ]
+  },
+  {
+    category: "Cejas",
+    image: cejasImage,
+    treatments: [
+      {
+        name: "Diseño de cejas + tinte",
+        description: "Diseño profesional de cejas con tinte para definir y oscurecer el color natural de las cejas.",
+        price: "20€",
         duration: "30 min"
+      },
+      {
+        name: "Diseño de cejas + depilación",
+        description: "Diseño y depilación profesional de cejas para conseguir la forma perfecta y definir el arco.",
+        price: "10€",
+        duration: "15 min"
       }
     ]
   }
