@@ -1,0 +1,105 @@
+import { Navigation } from "@/components/Navigation";
+import { About } from "@/components/About";
+import { Footer } from "@/components/Footer";
+import clinica1Image from "@/assets/clinica-1.jpeg";
+import clinica2Image from "@/assets/clinica-2.jpeg";
+import clinica3Image from "@/assets/clinica-3.jpeg";
+
+const SobreNosotros = () => {
+  return (
+    <>
+      <Navigation />
+      <main className="min-h-screen">
+        {/* Hero Section with Background Image */}
+        <section className="relative py-32 md:py-40 lg:py-48 overflow-hidden pt-32 md:pt-40 lg:pt-48">
+          {/* Background Image */}
+          <div 
+            className="absolute inset-0 bg-cover bg-bottom bg-no-repeat"
+            style={{ backgroundImage: `url(${clinica3Image})` }}
+          >
+            {/* Dark Overlay */}
+            <div className="absolute inset-0 bg-black/50"></div>
+          </div>
+
+          {/* Content */}
+          <div className="relative z-10 container mx-auto px-4">
+            <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white mb-6">
+              Sobre Nosotros
+            </h1>
+            <p className="text-center text-lg text-white/90 max-w-3xl mx-auto">
+              Conoce nuestra historia, filosofía y el espacio donde cuidamos de tu belleza y bienestar
+            </p>
+          </div>
+        </section>
+
+        {/* Our Story Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
+                Nuestra Historia
+              </h2>
+              <div className="prose prose-lg max-w-none">
+                <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-6">
+                  Zenith Clinic nació de la pasión por elevar la belleza y el bienestar a su punto más alto. Apasionados por la estética y el equilibrio interior, entendimos que la verdadera transformación va más allá de lo superficial: nace del cuidado integral de cuerpo, mente y piel.
+                </p>
+                <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                  Inspirados por la innovación y la cosmética natural de alta calidad, creamos el espacio que deseábamos encontrar —un lugar donde cada detalle está pensado para realzar tu belleza auténtica y acompañarte hacia tu mejor versión.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Philosophy Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
+                La Filosofía de Zenith Clinic
+              </h2>
+              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-lg">
+                <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                  En Zenith Clinic creemos que la belleza auténtica nace del equilibrio entre la ciencia y la sensibilidad. Nuestra filosofía une tecnología avanzada, cosmética natural y un enfoque humano que entiende cada piel como única. Buscamos resultados visibles, sí, pero también una experiencia que inspire bienestar, confianza y armonía interior.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Clinic Gallery Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
+                Nuestra Clínica
+              </h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {[clinica1Image, clinica2Image, clinica3Image].map((image, index) => (
+                  <div 
+                    key={index}
+                    className="aspect-[4/3] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
+                  >
+                    <img 
+                      src={image} 
+                      alt={`Zenith Clinic - Instalación ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Contact Section */}
+        <About />
+        
+        <Footer />
+      </main>
+    </>
+  );
+};
+
+export default SobreNosotros;
+
