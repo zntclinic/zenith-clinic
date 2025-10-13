@@ -8,31 +8,16 @@ export const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           {/* Map Section */}
           <div className="relative bg-white rounded-2xl shadow-lg overflow-hidden">
-            <div className="absolute top-4 left-4 z-10 bg-white rounded-lg shadow-md p-3">
-              <div className="flex items-center gap-2 mb-1">
-                <h3 className="font-semibold text-sm">Zenith Clinic</h3>
-              </div>
-              <div className="text-xs text-gray-600 mb-2">
-                Av. da Habana, 26, Ourense, España
-              </div>
-              <div className="flex items-center gap-1 text-xs text-gray-600 mb-2">
-                <span className="text-yellow-500">★★★★★</span>
-                <span>4.9 • 345 reviews</span>
-              </div>
-              <button className="text-xs text-blue-600 hover:underline">
-                View larger map
-              </button>
-            </div>
-
-            {/* Map placeholder - you can replace this with actual Google Maps embed */}
-            <div className="w-full h-80 bg-gradient-to-br from-green-100 to-blue-100 relative">
-              <div className="absolute inset-0 bg-gray-100 opacity-20 pattern-dots"></div>
-              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center">
-                  <MapPin size={20} className="text-white" />
-                </div>
-              </div>
-            </div>
+            {/* Google Maps Embed */}
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d737.2486946199689!2d-7.865895830361884!3d42.34263468945067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2fff9e6f8b3aef%3A0x32822d79706056be!2sZenith%20Clinic!5e0!3m2!1ses!2sde!4v1760350524648!5m2!1ses!2sde" 
+            width="100%" 
+            height="100%" 
+            style={{ border: 0 }}
+            allowFullScreen={true} 
+            loading="lazy" 
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Zenith Clinic Location"
+            ></iframe>
           </div>
 
           {/* Information Section */}
