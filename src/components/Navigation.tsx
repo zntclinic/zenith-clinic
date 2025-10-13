@@ -57,6 +57,16 @@ export const Navigation = () => {
             >
               Sobre Nosotros
             </Link>
+            <Link
+              to="/tarjetas-regalo"
+              className={`transition-colors ${
+                isScrolled 
+                  ? 'text-foreground hover:text-primary' 
+                  : 'text-white hover:text-gray-200'
+              }`}
+            >
+              Tarjetas Regalo
+            </Link>
             <Button
               variant="elegant"
               size="default"
@@ -102,6 +112,17 @@ export const Navigation = () => {
                 }`}
               >
                 Sobre Nosotros
+              </Link>
+              <Link
+                to="/tarjetas-regalo"
+                onClick={() => setIsOpen(false)}
+                className={`transition-colors text-left ${
+                  isScrolled 
+                    ? 'text-foreground hover:text-primary' 
+                    : 'text-white hover:text-gray-200'
+                }`}
+              >
+                Tarjetas Regalo
               </Link>
               <Button
                 variant="elegant"

@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Index from "./pages/Index";
 import Tratamientos from "./pages/Tratamientos";
 import SobreNosotros from "./pages/SobreNosotros";
+import TarjetasRegalo from "./pages/TarjetasRegalo";
 import NotFound from "./pages/NotFound";
 
 // Component to scroll to top on route change
@@ -32,6 +33,7 @@ const App = () => (
         <Route path="/" element={<Index />} />
         <Route path="/tratamientos" element={<Tratamientos />} />
         <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+        <Route path="/tarjetas-regalo" element={<TarjetasRegalo />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
