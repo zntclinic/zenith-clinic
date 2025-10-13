@@ -1,8 +1,9 @@
-# Welcome to your Lovable project
+# Zenith Clinic - Medicina Estética
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/1ecff925-6c58-461c-b502-87ceece9ac61
+**Live Website**: https://andrea.github.io/zenith-clinic
+**Development URL**: https://lovable.dev/projects/1ecff925-6c58-461c-b502-87ceece9ac61
 
 ## How can I edit this code?
 

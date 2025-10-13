@@ -11,9 +11,9 @@ const App = () => (
   <TooltipProvider>
     <Toaster />
     <Sonner />
-    <BrowserRouter>
+    <BrowserRouter basename={`${process.env.PUBLIC_URL}`}>
       <Routes>
-        <Route path="/" element={<Index />} />
+        <Route path="" element={<Index />} />
         <Route path="/tratamientos" element={<Tratamientos />} />
         <Route path="/sobre-nosotros" element={<SobreNosotros />} />
         <Route path="*" element={<NotFound />} />
