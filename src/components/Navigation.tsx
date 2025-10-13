@@ -29,7 +29,7 @@ export const Navigation = () => {
           <Link 
             to="/"
             className={`font-playfair text-2xl font-bold transition-colors duration-300 ${
-              isScrolled ? 'text-primary' : 'text-white'
+              isScrolled ? 'text-primary' : 'text-black'
             }`}
           >
             {businessInfo.name}
@@ -42,7 +42,7 @@ export const Navigation = () => {
               className={`transition-colors ${
                 isScrolled 
                   ? 'text-foreground hover:text-primary' 
-                  : 'text-white hover:text-gray-200'
+                  : 'text-black hover:text-gray-700'
               }`}
             >
               Tratamientos
@@ -52,7 +52,7 @@ export const Navigation = () => {
               className={`transition-colors ${
                 isScrolled 
                   ? 'text-foreground hover:text-primary' 
-                  : 'text-white hover:text-gray-200'
+                  : 'text-black hover:text-gray-700'
               }`}
             >
               Sobre Nosotros
@@ -62,7 +62,7 @@ export const Navigation = () => {
               className={`transition-colors ${
                 isScrolled 
                   ? 'text-foreground hover:text-primary' 
-                  : 'text-white hover:text-gray-200'
+                  : 'text-black hover:text-gray-700'
               }`}
             >
               Tarjetas Regalo
@@ -79,7 +79,7 @@ export const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             className={`md:hidden transition-colors ${
-              isScrolled ? 'text-foreground' : 'text-white'
+              isScrolled ? 'text-foreground' : 'text-black'
             }`}
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -89,7 +89,7 @@ export const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className={`md:hidden py-4 ${isScrolled ? 'border-t border-border' : 'border-t border-white/20'}`}>
+          <div className={`md:hidden py-4 ${isScrolled ? 'border-t border-border' : 'border-t border-black/20'}`}>
             <div className="flex flex-col gap-4">
               <Link
                 to="/tratamientos"
@@ -97,7 +97,7 @@ export const Navigation = () => {
                 className={`transition-colors text-left ${
                   isScrolled 
                     ? 'text-foreground hover:text-primary' 
-                    : 'text-white hover:text-gray-200'
+                    : 'text-black hover:text-gray-700'
                 }`}
               >
                 Tratamientos
@@ -108,7 +108,7 @@ export const Navigation = () => {
                 className={`transition-colors text-left ${
                   isScrolled 
                     ? 'text-foreground hover:text-primary' 
-                    : 'text-white hover:text-gray-200'
+                    : 'text-black hover:text-gray-700'
                 }`}
               >
                 Sobre Nosotros
@@ -119,7 +119,7 @@ export const Navigation = () => {
                 className={`transition-colors text-left ${
                   isScrolled 
                     ? 'text-foreground hover:text-primary' 
-                    : 'text-white hover:text-gray-200'
+                    : 'text-black hover:text-gray-700'
                 }`}
               >
                 Tarjetas Regalo

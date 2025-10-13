@@ -30,19 +30,19 @@ const TarjetasRegalo = () => {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${clinica2Image})` }}
           >
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/60"></div>
+            {/* Beige Overlay */}
+            <div className="absolute inset-0 bg-[#f5f5dc]/70"></div>
           </div>
 
           {/* Content */}
           <div className="relative z-10 container mx-auto px-4">
             <div className="flex items-center justify-center mb-6">
-              <Gift className="w-16 h-16 text-white" />
+              <Gift className="w-16 h-16 text-black" />
             </div>
-            <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white mb-6">
+            <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-center text-black mb-6">
               Tarjetas Regalo
             </h1>
-            <p className="text-center text-lg md:text-xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-center text-lg md:text-xl text-black/80 max-w-3xl mx-auto">
               Regala belleza, bienestar y momentos únicos
             </p>
           </div>

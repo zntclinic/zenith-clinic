@@ -15,16 +15,16 @@ const Tratamientos = () => {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${clinica1Image})` }}
           >
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/50"></div>
+            {/* Beige Overlay */}
+            <div className="absolute inset-0 bg-[#f5f5dc]/70"></div>
           </div>
 
           {/* Content */}
           <div className="relative z-10 container mx-auto px-4">
-            <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-center text-white mb-6">
+            <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-center text-black mb-6">
               Nuestros Tratamientos
             </h1>
-            <p className="text-center text-lg text-white/90 max-w-3xl mx-auto">
+            <p className="text-center text-lg text-black/80 max-w-3xl mx-auto">
               Descubre nuestra amplia gama de tratamientos diseñados para realzar tu belleza natural y bienestar
             </p>
           </div>
