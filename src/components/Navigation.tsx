@@ -61,16 +61,6 @@ export const Navigation = () => {
             >
               Sobre Nosotros
             </button>
-            <button
-              onClick={() => scrollToSection('contacto')}
-              className={`transition-colors ${
-                isScrolled 
-                  ? 'text-foreground hover:text-primary' 
-                  : 'text-white hover:text-gray-200'
-              }`}
-            >
-              Contacto
-            </button>
             <Button
               variant="elegant"
               size="default"
@@ -114,16 +104,6 @@ export const Navigation = () => {
                 }`}
               >
                 Sobre Nosotros
-              </button>
-              <button
-                onClick={() => scrollToSection('contacto')}
-                className={`transition-colors text-left ${
-                  isScrolled 
-                    ? 'text-foreground hover:text-primary' 
-                    : 'text-white hover:text-gray-200'
-                }`}
-              >
-                Contacto
               </button>
               <Button
                 variant="elegant"
