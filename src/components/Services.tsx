@@ -3,7 +3,7 @@ import { businessInfo } from "@/data/businessInfo";
 
 export const Services = () => {
   return (
-    <section id="servicios" className="py-24 bg-white">
+    <section id="servicios" className="pt-12 pb-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="space-y-16">
           {serviceCategories.map((category, categoryIndex) => (
