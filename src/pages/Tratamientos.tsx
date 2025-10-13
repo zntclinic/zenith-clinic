@@ -9,7 +9,7 @@ const Tratamientos = () => {
       <Navigation />
       <main className="min-h-screen">
         {/* Hero Section with Background Image */}
-        <section className="relative py-32 md:py-40 lg:py-48 overflow-hidden pt-32 md:pt-40 lg:pt-48">
+        <section className="relative h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden flex items-center">
           {/* Background Image */}
           <div 
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
