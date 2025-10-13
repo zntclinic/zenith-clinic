@@ -20,5 +20,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: process.env.NODE_ENV === "production" && process.env.VITE_DEPLOY === "true" ? "/zenith-clinic/" : "/",
+  base: process.env.NODE_ENV === "production" ? "/zenith-clinic/" : "/",
 }));

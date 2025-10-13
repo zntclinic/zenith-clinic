@@ -19,11 +19,14 @@ const ScrollToTop = () => {
   return null;
 };
 
+// Detect if we're in development mode
+const isDevelopment = import.meta.env.DEV;
+
 const App = () => (
   <TooltipProvider>
     <Toaster />
     <Sonner />
-    <BrowserRouter basename={process.env.NODE_ENV === "production" ? "/zenith-clinic" : "/"}>
+    <BrowserRouter basename={isDevelopment ? "/" : "/zenith-clinic"}>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Index />} />
@@ -36,4 +39,3 @@ const App = () => (
 );
 
 export default App;
-
