@@ -8,8 +8,8 @@ const TarjetasRegalo = () => {
   const giftCardAmounts = [
     { amount: 50, popular: false },
     { amount: 100, popular: true },
-    { amount: 150, popular: false },
-    { amount: 200, popular: false },
+    { amount: 250, popular: false },
+    { amount: 500, popular: false },
   ];
 
   const benefits = [

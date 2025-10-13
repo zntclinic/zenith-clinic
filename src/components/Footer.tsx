@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { InstagramIcon, GmailIcon } from "./icons/SocialIcons";
 import { businessInfo } from "@/data/businessInfo";
 
@@ -36,12 +37,12 @@ export const Footer = () => {
           <div className="flex flex-col items-start">
             <h3 className="text-xl font-bold text-black mb-4">Otros enlaces</h3>
             <div className="space-y-3">
-              <a href="#" className="flex items-center gap-2 text-gray-600 hover:text-black transition-colors">
+              <Link to="/tarjetas-regalo" className="flex items-center gap-2 text-gray-600 hover:text-black transition-colors">
                 <svg className="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                 </svg>
                 <span>Tarjeta de Regalo</span>
-              </a>
+              </Link>
               <a href="#" className="flex items-center gap-2 text-gray-600 hover:text-black transition-colors">
                 <svg className="w-4 h-4 text-amber-600" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M20 6h-2V4c0-1.11-.89-2-2-2H8c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0H8V4h6v2zm4 12H6V10h12v8z"/>
