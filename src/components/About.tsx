@@ -1,5 +1,6 @@
 import { MapPin, Clock, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { WhatsAppIcon } from "@/components/icons/SocialIcons";
 
 export const About = () => {
   return (
@@ -61,9 +62,10 @@ export const About = () => {
 
             <Button
               size="lg"
-              className="bg-green-500 text-white hover:bg-green-600 font-semibold px-8 py-3 w-fit"
+              className="bg-green-500 text-white hover:bg-green-600 font-semibold px-8 py-3 w-fit flex items-center gap-2"
               onClick={() => window.open('https://wa.me/34628521662', '_blank')}
             >
+              <WhatsAppIcon className="w-5 h-5 text-white" />
               Contactar
             </Button>
           </div>

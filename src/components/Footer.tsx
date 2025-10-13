@@ -10,7 +10,7 @@ export const Footer = () => {
             <h3 className="text-xl font-bold text-black mb-4">ZENITH CLINIC</h3>
             <div className="flex gap-3 mb-6">
               <a 
-                href="https://instagram.com/zenithclinic" 
+                href="https://www.instagram.com/znt.clinic/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="w-8 h-8 border border-gray-300 rounded-full flex items-center justify-center hover:bg-gray-200 transition-colors"
