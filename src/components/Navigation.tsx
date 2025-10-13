@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
+import { businessInfo } from "@/data/businessInfo";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +36,7 @@ export const Navigation = () => {
           <div className={`font-playfair text-2xl font-bold transition-colors duration-300 ${
             isScrolled ? 'text-primary' : 'text-white'
           }`}>
-            Zenith Clinic
+            {businessInfo.name}
           </div>
 
           {/* Desktop Navigation */}
@@ -73,7 +74,7 @@ export const Navigation = () => {
             <Button
               variant="elegant"
               size="default"
-              onClick={() => window.open('https://booksy.com/es-es/rwg/153333_zenith-clinic_medicina-estetica_65288_ourense?hl=es-DE&gei=tQHpaP6hB66oxc8P4srX0Qo&rwg_token=ACgRB3e5lvnMzzILBD_P9qgArcYnzOFL65huPYfWsJVgsq5hSxu_StI2RxM6me9s3CH23uA8drCaHINN9CZ0wZz01s1RZi3Q8Q%3D%3D', '_blank')}
+              onClick={() => window.open(businessInfo.booking.booksy, '_blank')}
             >
               Reserva
             </Button>
@@ -127,7 +128,7 @@ export const Navigation = () => {
               <Button
                 variant="elegant"
                 size="default"
-                onClick={() => window.open('https://booksy.com/es-es/rwg/153333_zenith-clinic_medicina-estetica_65288_ourense?hl=es-DE&gei=tQHpaP6hB66oxc8P4srX0Qo&rwg_token=ACgRB3e5lvnMzzILBD_P9qgArcYnzOFL65huPYfWsJVgsq5hSxu_StI2RxM6me9s3CH23uA8drCaHINN9CZ0wZz01s1RZi3Q8Q%3D%3D', '_blank')}
+                onClick={() => window.open(businessInfo.booking.booksy, '_blank')}
               >
                 Reserva
               </Button>
