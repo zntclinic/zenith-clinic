@@ -2,25 +2,16 @@ import { MapPin, Clock, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { WhatsAppIcon } from "@/components/icons/SocialIcons";
 import { businessInfo } from "@/data/businessInfo";
-
 export const About = () => {
-  return (
-    <section id="sobre-nosotros" className="py-24 bg-gray-50">
+  return <section id="sobre-nosotros" className="py-24 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
           {/* Map Section */}
           <div className="relative bg-white rounded-2xl shadow-lg overflow-hidden">
             {/* Google Maps Embed */}
-            <iframe 
-              src={businessInfo.maps.embedUrl}
-              width="100%" 
-              height="100%" 
-              style={{ border: 0 }}
-              allowFullScreen={true} 
-              loading="lazy" 
-              referrerPolicy="no-referrer-when-downgrade"
-              title={`${businessInfo.name} Location`}
-            ></iframe>
+            <iframe src={businessInfo.maps.embedUrl} width="100%" height="100%" style={{
+            border: 0
+          }} allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade" title={`${businessInfo.name} Location`}></iframe>
           </div>
 
           {/* Information Section */}
@@ -29,9 +20,7 @@ export const About = () => {
               EXPERIMENTA {businessInfo.name}
             </h2>
 
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              ¿Lista para experimentar el lujo? Reserva tu cita hoy y déjanos mimarte.
-            </p>
+            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">¿Lista para experimentar lo mejor de tu vida? Reserva tu cita hoy y déjanos mimarte.</p>
 
             <div className="space-y-6 mb-8">
               <div className="flex items-center gap-4">
@@ -62,17 +51,12 @@ export const About = () => {
               </div>
             </div>
 
-            <Button
-              size="lg"
-              className="bg-green-500 text-white hover:bg-green-600 font-semibold px-8 py-3 w-fit flex items-center gap-2"
-              onClick={() => window.open(businessInfo.contact.whatsapp, '_blank')}
-            >
+            <Button size="lg" className="bg-green-500 text-white hover:bg-green-600 font-semibold px-8 py-3 w-fit flex items-center gap-2" onClick={() => window.open(businessInfo.contact.whatsapp, '_blank')}>
               <WhatsAppIcon className="w-5 h-5 text-white" />
               Contactar
             </Button>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
