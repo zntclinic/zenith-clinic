@@ -40,9 +40,9 @@ export const Promotions = () => {
                            {promo.duration}
                          </span>
                        </div>
-                       <div 
+                       <div
                          className="text-muted-foreground text-lg leading-relaxed flex-grow"
-                         dangerouslySetInnerHTML={{ 
+                         dangerouslySetInnerHTML={{
                            __html: promo.description
                              .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
                              .replace(/\*(.*?)\*/g, '<strong>$1</strong>')
@@ -59,4 +59,3 @@ export const Promotions = () => {
     </section>
   );
 };
-
