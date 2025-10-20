@@ -23,14 +23,14 @@ export const Hero = () => {
 
       {/* Business Name and Buttons - Centered on mobile, Left on desktop */}
       <div className="absolute bottom-52 sm:bottom-12 md:bottom-16 left-1/2 transform -translate-x-1/2 sm:left-8 md:left-12 lg:left-24 sm:transform-none z-20">
-        <h1 className="font-playfair text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4 text-center sm:text-left">
+        <h1 className="font-playfair text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-4 text-center sm:text-left">
           {businessInfo.name}
         </h1>
 
         <div className="flex flex-row gap-2 sm:gap-4 justify-center sm:justify-start">
           <Button
             size="sm"
-            className="bg-white text-black hover:bg-gray-100 font-semibold px-3 py-2 text-xs sm:px-8 sm:py-5 sm:text-base md:px-10 md:py-6"
+            className="bg-white text-black hover:bg-gray-100 font-semibold px-3 py-2 text-sm sm:px-8 sm:py-5 sm:text-base md:px-10 md:py-6"
             onClick={() => window.open(businessInfo.booking.booksy, '_blank')}
           >
             Reserva
@@ -38,7 +38,7 @@ export const Hero = () => {
 
           <Button
             size="sm"
-            className="bg-green-500 text-white hover:bg-green-600 font-semibold px-3 py-2 gap-1 text-xs sm:px-8 sm:py-5 sm:gap-2 sm:text-base md:px-10 md:py-6"
+            className="bg-green-500 text-white hover:bg-green-600 font-semibold px-3 py-2 gap-1 text-sm sm:px-8 sm:py-5 sm:gap-2 sm:text-base md:px-10 md:py-6"
             onClick={() => window.open(businessInfo.contact.whatsapp, '_blank')}
           >
             <span className="sm:hidden">
@@ -60,14 +60,14 @@ export const Hero = () => {
         <div className="flex flex-col sm:block text-center sm:text-right max-w-none sm:max-w-md">
           <div className="flex items-center justify-center sm:justify-end gap-2 sm:gap-3 mb-2 sm:mb-3 whitespace-nowrap">
             <MapPin size={18} className="text-black/80 flex-shrink-0 sm:w-5 sm:h-5 md:w-6 md:h-6" />
-            <span className="text-sm sm:text-base md:text-lg lg:text-xl font-medium">
+            <span className="text-base sm:text-base md:text-lg lg:text-xl font-medium">
               {businessInfo.address.street}, {businessInfo.address.city}, {businessInfo.address.country}
             </span>
           </div>
 
           <div className="flex items-center justify-center sm:justify-end gap-2 sm:gap-3 whitespace-nowrap">
             <Clock size={18} className="text-black/80 flex-shrink-0 sm:w-5 sm:h-5 md:w-6 md:h-6" />
-            <span className="text-sm sm:text-base md:text-lg lg:text-xl">
+            <span className="text-base sm:text-base md:text-lg lg:text-xl">
               {businessInfo.hours.display}
             </span>
           </div>
