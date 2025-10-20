@@ -93,7 +93,7 @@ export const Services = () => {
                         {/* Treatment image - always visible */}
                         {category.image ? (
                           <img
-                            src={treatment.image}
+                            src={treatment.image || category.image}
                             alt={treatment.name}
                             className="absolute inset-0 w-full h-full object-cover"
                           />
