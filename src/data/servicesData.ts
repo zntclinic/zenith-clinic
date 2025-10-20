@@ -497,84 +497,85 @@ export const serviceCategories: ServiceCategory[] = [
       }
     ]
   },
-  {
-    category: "Manicura",
-    image: manicuraImage,
-    treatments: [
-      {
-        name: "Esmaltado Semipermanente",
-        description: "Esmaltado semipermanente de larga duración que mantiene el brillo y color perfecto hasta 3 semanas.",
-        price: "30€",
-        duration: "90 min"
-      },
-      {
-        name: "Arreglo Uña Rota",
-        description: "Reparación profesional de uñas rotas o dañadas para restaurar su forma y resistencia.",
-        price: "6€",
-        duration: "15 min"
-      },
-      {
-        name: "Decoración Elaborada",
-        description: "Decoración artística elaborada por uña para diseños únicos y personalizados.",
-        price: "1€/uña",
-        duration: "5 min"
-      },
-      {
-        name: "Esmaltado Semipermanente Francesa",
-        description: "Esmaltado semipermanente con diseño francés clásico y elegante de larga duración.",
-        price: "35€",
-        duration: "105 min"
-      },
-      {
-        name: "Retirar Semipermanente",
-        description: "Retirada profesional del esmalte semipermanente sin dañar la uña natural.",
-        price: "10€",
-        duration: "20 min"
-      },
-      {
-        name: "Retirar Acrygel",
-        description: "Retirada profesional del acrílico y gel sin dañar la uña natural.",
-        price: "12€",
-        duration: "30 min"
-      },
-      {
-        name: "Retirar + Limar Semipermanente",
-        description: "Retirada y limado profesional del esmalte semipermanente para preparar las uñas.",
-        price: "14€",
-        duration: "30 min"
-      },
-      {
-        name: "Retirar + Limar Acr+gel",
-        description: "Retirada y limado profesional del acrílico y gel para preparar las uñas para un nuevo tratamiento.",
-        price: "16€",
-        duration: "35 min"
-      }
-    ]
-  },
-  {
-    category: "Pedicura",
-    image: pedicuraImage,
-    treatments: [
-      {
-        name: "Pedicura Básica",
-        description: "Cuidado básico de pies y uñas con limpieza, limado y esmaltado tradicional.",
-        price: "25€",
-        duration: "40 min"
-      },
-      {
-        name: "Pedicura Talones Secos",
-        description: "Tratamiento especializado para talones secos con limpieza con torno, exfoliación e hidratación profunda.",
-        price: "30€",
-        duration: "50 min"
-      },
-      {
-        name: "Pedicura Completa",
-        description: "Tratamiento completo de pedicura con limpieza con torno, exfoliación, hidratación y esmaltado semipermanente.",
-        price: "40€",
-        duration: "120 min"
-      }
-    ]
-  },
+  // Temporarily hidden services
+  // {
+  //   category: "Manicura",
+  //   image: manicuraImage,
+  //   treatments: [
+  //     {
+  //       name: "Esmaltado Semipermanente",
+  //       description: "Esmaltado semipermanente de larga duración que mantiene el brillo y color perfecto hasta 3 semanas.",
+  //       price: "30€",
+  //       duration: "90 min"
+  //     },
+  //     {
+  //       name: "Arreglo Uña Rota",
+  //       description: "Reparación profesional de uñas rotas o dañadas para restaurar su forma y resistencia.",
+  //       price: "6€",
+  //       duration: "15 min"
+  //     },
+  //     {
+  //       name: "Decoración Elaborada",
+  //       description: "Decoración artística elaborada por uña para diseños únicos y personalizados.",
+  //       price: "1€/uña",
+  //       duration: "5 min"
+  //     },
+  //     {
+  //       name: "Esmaltado Semipermanente Francesa",
+  //       description: "Esmaltado semipermanente con diseño francés clásico y elegante de larga duración.",
+  //       price: "35€",
+  //       duration: "105 min"
+  //     },
+  //     {
+  //       name: "Retirar Semipermanente",
+  //       description: "Retirada profesional del esmalte semipermanente sin dañar la uña natural.",
+  //       price: "10€",
+  //       duration: "20 min"
+  //     },
+  //     {
+  //       name: "Retirar Acrygel",
+  //       description: "Retirada profesional del acrílico y gel sin dañar la uña natural.",
+  //       price: "12€",
+  //       duration: "30 min"
+  //     },
+  //     {
+  //       name: "Retirar + Limar Semipermanente",
+  //       description: "Retirada y limado profesional del esmalte semipermanente para preparar las uñas.",
+  //       price: "14€",
+  //       duration: "30 min"
+  //     },
+  //     {
+  //       name: "Retirar + Limar Acr+gel",
+  //       description: "Retirada y limado profesional del acrílico y gel para preparar las uñas para un nuevo tratamiento.",
+  //       price: "16€",
+  //       duration: "35 min"
+  //     }
+  //   ]
+  // },
+  // {
+  //   category: "Pedicura",
+  //   image: pedicuraImage,
+  //   treatments: [
+  //     {
+  //       name: "Pedicura Básica",
+  //       description: "Cuidado básico de pies y uñas con limpieza, limado y esmaltado tradicional.",
+  //       price: "25€",
+  //       duration: "40 min"
+  //     },
+  //     {
+  //       name: "Pedicura Talones Secos",
+  //       description: "Tratamiento especializado para talones secos con limpieza con torno, exfoliación e hidratación profunda.",
+  //       price: "30€",
+  //       duration: "50 min"
+  //     },
+  //     {
+  //       name: "Pedicura Completa",
+  //       description: "Tratamiento completo de pedicura con limpieza con torno, exfoliación, hidratación y esmaltado semipermanente.",
+  //       price: "40€",
+  //       duration: "120 min"
+  //     }
+  //   ]
+  // },
   {
     category: "Tatuaje",
     image: tatuajeImage,
