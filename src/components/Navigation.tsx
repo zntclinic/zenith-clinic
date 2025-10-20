@@ -19,18 +19,18 @@ export const Navigation = () => {
   }, []);
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-background/95 backdrop-blur-sm border-b border-border shadow-soft' 
+    <nav className={`fixed top-0 left-0 right-0 z-50 ${
+      isScrolled ? 'transition-all duration-300' : ''
+    } ${
+      isOpen || isScrolled
+        ? 'bg-background/95 backdrop-blur-sm border-b border-border shadow-soft'
         : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link 
+          <Link
             to="/"
-            className={`font-playfair text-2xl font-bold transition-colors duration-300 ${
-              isScrolled ? 'text-primary' : 'text-black'
-            }`}
+            className="font-playfair text-2xl font-bold text-black transition-colors duration-300"
           >
             {businessInfo.name}
           </Link>
@@ -39,31 +39,19 @@ export const Navigation = () => {
           <div className="hidden md:flex items-center gap-6">
             <Link
               to="/tratamientos"
-              className={`transition-colors ${
-                isScrolled 
-                  ? 'text-foreground hover:text-primary' 
-                  : 'text-black hover:text-gray-700'
-              }`}
+              className="transition-colors text-black hover:text-gray-700"
             >
               Tratamientos
             </Link>
             <Link
               to="/sobre-nosotros"
-              className={`transition-colors ${
-                isScrolled 
-                  ? 'text-foreground hover:text-primary' 
-                  : 'text-black hover:text-gray-700'
-              }`}
+              className="transition-colors text-black hover:text-gray-700"
             >
               Sobre Nosotros
             </Link>
             <Link
               to="/tarjetas-regalo"
-              className={`transition-colors ${
-                isScrolled 
-                  ? 'text-foreground hover:text-primary' 
-                  : 'text-black hover:text-gray-700'
-              }`}
+              className="transition-colors text-black hover:text-gray-700"
             >
               Tarjetas Regalo
             </Link>
@@ -78,49 +66,38 @@ export const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className={`md:hidden transition-colors ${
-              isScrolled ? 'text-foreground' : 'text-black'
-            }`}
+            className="md:hidden transition-colors text-black"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
 
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <div className={`md:hidden py-4 ${isScrolled ? 'border-t border-border' : 'border-t border-black/20'}`}>
+      </div>
+
+      {/* Mobile Navigation - Full Width */}
+      {isOpen && (
+        <div className={`md:hidden bg-background/95 backdrop-blur-sm ${isScrolled ? 'border-t border-border' : 'border-t border-black/20'}`}>
+          <div className="container mx-auto px-4 py-4">
             <div className="flex flex-col gap-4">
               <Link
                 to="/tratamientos"
                 onClick={() => setIsOpen(false)}
-                className={`transition-colors text-left ${
-                  isScrolled 
-                    ? 'text-foreground hover:text-primary' 
-                    : 'text-black hover:text-gray-700'
-                }`}
+                className="transition-colors text-left text-black hover:text-gray-700"
               >
                 Tratamientos
               </Link>
               <Link
                 to="/sobre-nosotros"
                 onClick={() => setIsOpen(false)}
-                className={`transition-colors text-left ${
-                  isScrolled 
-                    ? 'text-foreground hover:text-primary' 
-                    : 'text-black hover:text-gray-700'
-                }`}
+                className="transition-colors text-left text-black hover:text-gray-700"
               >
                 Sobre Nosotros
               </Link>
               <Link
                 to="/tarjetas-regalo"
                 onClick={() => setIsOpen(false)}
-                className={`transition-colors text-left ${
-                  isScrolled 
-                    ? 'text-foreground hover:text-primary' 
-                    : 'text-black hover:text-gray-700'
-                }`}
+                className="transition-colors text-left text-black hover:text-gray-700"
               >
                 Tarjetas Regalo
               </Link>
@@ -133,8 +110,8 @@ export const Navigation = () => {
               </Button>
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </nav>
   );
 };
