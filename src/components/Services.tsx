@@ -67,7 +67,7 @@ export const Services = () => {
                 ) : (
                   /* Category Header - Only shown when expanded */
                   <div className="mb-6">
-                    <div 
+                    <div
                       onClick={() => toggleCategory(categoryIndex)}
                       className="flex items-center justify-between cursor-pointer group"
                     >
@@ -93,7 +93,7 @@ export const Services = () => {
                         {/* Treatment image - always visible */}
                         {category.image ? (
                           <img
-                            src={category.image}
+                            src={treatment.image}
                             alt={treatment.name}
                             className="absolute inset-0 w-full h-full object-cover"
                           />
