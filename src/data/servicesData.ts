@@ -4,7 +4,7 @@ import facialesImage from "@/assets/faciales/faciales.jpeg";
 import microImage from "@/assets/micropigmentacion/micropigmentacion.jpeg";
 import manicuraImage from "@/assets/manicura.jpg";
 import pedicuraImage from "@/assets/pedicura.jpg";
-import pestanasImage from "@/assets/pestañas/pestañas.jpeg";
+import pestanasImage from "@/assets/pestanhas/pestanhas.jpeg";
 import tatuajeImage from "@/assets/tatuaje.jpeg";
 import cejasImage from "@/assets/cejas/cejas.jpeg";
 import laserImage from "@/assets/laser/laser.jpeg";
@@ -18,7 +18,7 @@ import masajeCraneoImage from "@/assets/masajes/masaje-parcial-craneo-cervical.j
 import masajeEspaldaImage from "@/assets/masajes/masaje-parcial-espalda.jpeg";
 import masajePiernasImage from "@/assets/masajes/masaje-piernas-cansadas+vendas.jpeg";
 import masajePiedrasImage from "@/assets/masajes/masaje-piedras-calientes.jpeg";
-import masajeSolinoImage from "@/assets/masajes/soliño.jpeg";
+import masajeSolinoImage from "@/assets/masajes/solinho.jpeg";
 import masajeCanelaImage from "@/assets/masajes/exfoliacion+masaje-canela.jpeg";
 import masajeMaracuyaImage from "@/assets/masajes/exfoliacion+masaje-maracuya.jpeg";
 import masajeChocolateImage from "@/assets/masajes/envoltura+masaje-chocolate.jpeg";
@@ -37,10 +37,10 @@ import microLabiosImage from "@/assets/micropigmentacion/micropigmentacion-labio
 import microOjosImage from "@/assets/micropigmentacion/micropigmentacion-ojos.jpeg";
 
 // Pestañas treatment images
-import pestanasClasicaImage from "@/assets/pestañas/tecnica-clasica.jpeg";
-import pestanasRimelImage from "@/assets/pestañas/efecto-rimel-mojado.jpeg";
-import pestanasVolumenImage from "@/assets/pestañas/pestañas-volumen.jpeg";
-import pestanasRetiradaImage from "@/assets/pestañas/retirada-extensiones.jpeg";
+import pestanasClasicaImage from "@/assets/pestanhas/tecnica-clasica.jpeg";
+import pestanasRimelImage from "@/assets/pestanhas/efecto-rimel-mojado.jpeg";
+import pestanasVolumenImage from "@/assets/pestanhas/pestanhas-volumen.jpeg";
+import pestanasRetiradaImage from "@/assets/pestanhas/retirada-extensiones.jpeg";
 
 // Cejas treatment images
 import cejasTinteImage from "@/assets/cejas/depilacion+tinte.jpeg";
