@@ -44,7 +44,7 @@ import pestanasRetiradaImage from "@/assets/pestanhas/retirada-extensiones.jpeg"
 
 // Cejas treatment images
 import cejasTinteImage from "@/assets/cejas/depilacion+tinte.jpeg";
-import cejasDepilacionImage from "@/assets/cejas/diseño+depilacion.jpeg";
+import cejasDepilacionImage from "@/assets/cejas/disenho+depilacion.jpeg";
 
 export interface Treatment {
   name: string;
