@@ -1,74 +1,70 @@
-# Zenith Clinic - Medicina Estética
+# Zenith Clinic – Medicina Estética
 
-## Project info
+Sitio web de Zenith Clinic (Ourense). Proyecto frontend en React + Vite con Tailwind y componentes shadcn-ui.
 
-**Live Website**: https://andrea.github.io/zenith-clinic
-**Development URL**: https://lovable.dev/projects/1ecff925-6c58-461c-b502-87ceece9ac61
+## Enlaces
 
-## How can I edit this code?
+- Live: https://zntclinic.com
+- Repo: https://github.com/zntclinic/zenith-clinic
 
-There are several ways of editing your application.
+## Requisitos
 
-**Use Lovable**
+- Node.js 18+ y npm
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1ecff925-6c58-461c-b502-87ceece9ac61) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Desarrollo local
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+git clone https://github.com/zntclinic/zenith-clinic
+cd zenith-clinic
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Abre http://localhost:5173 en el navegador.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Comandos
 
-**Use GitHub Codespaces**
+- `npm run dev`: servidor de desarrollo
+- `npm run build`: build de producción (Vite)
+- `npm run preview`: previsualizar build local
+- `npm run lint`: ejecutar ESLint
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Tecnologías
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
+- React 18
 - TypeScript
-- React
-- shadcn-ui
+- Vite 5
 - Tailwind CSS
+- shadcn-ui (componentes UI)
 
-## How can I deploy this project?
+## Estructura del proyecto
 
-Simply open [Lovable](https://lovable.dev/projects/1ecff925-6c58-461c-b502-87ceece9ac61) and click on Share -> Publish.
+```
+src/
+  assets/           # imágenes y media
+  components/       # componentes UI (Hero, Services, etc.)
+  data/             # datos estáticos (servicios, info negocio)
+  pages/            # páginas (Index, SobreNosotros, Tratamientos)
+  hooks/, lib/      # utilidades y hooks
+```
 
-## Can I connect a custom domain to my Lovable project?
+## Formato y estilo
 
-Yes, you can!
+- Prettier: `printWidth` 120
+- VS Code: regla visual a 120 columnas, format on save
+- ESLint: reglas para React/TS y máx. 120 caracteres
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## Despliegue
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+El proyecto está configurado para GitHub Pages (copia `dist/index.html` a `dist/404.html`).
+
+```sh
+npm run build
+# publica el contenido de dist/ con tu flujo habitual (p. ej. gh-pages)
+```
+
+El dominio `zntclinic.com` apunta a la salida estática generada en `dist/`.
+
+## Licencia
+
+Propietario del sitio: Zenith Clinic. Uso interno del equipo.
