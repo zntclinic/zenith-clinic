@@ -45,7 +45,7 @@ export const businessInfo: BusinessInfo = {
     phone: "34628521662",
     phoneFormatted: "+34 628 52 16 62",
     whatsapp: "https://wa.me/34628521662",
-    email: "info@zenithclinic.com"
+    email: "info@zntlinic.com"
   },
   social: {
     instagram: "https://www.instagram.com/znt.clinic/"
