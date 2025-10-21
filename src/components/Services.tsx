@@ -2,9 +2,15 @@ import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { serviceCategories } from "@/data/servicesData";
 import { businessInfo } from "@/data/businessInfo";
+import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 export const Services = () => {
   const [expandedCategories, setExpandedCategories] = useState<number[]>([]);
+  const { getItemProps, isVisible } = useScrollReveal({
+    threshold: 0.2,
+    rootMargin: "0px 0px -10% 0px",
+    triggerOnce: true,
+  });
 
   const toggleCategory = (index: number) => {
     setExpandedCategories((prev) =>
@@ -21,12 +27,16 @@ export const Services = () => {
           {serviceCategories.map((category, categoryIndex) => {
             const isExpanded = expandedCategories.includes(categoryIndex);
 
+            const isItemVisible = isVisible(categoryIndex) || isExpanded;
             return (
               <div
                 key={categoryIndex}
+                {...getItemProps(categoryIndex)}
                 className={`${
                   isExpanded ? "md:col-span-2 lg:col-span-3" : ""
-                } transition-all duration-300`}
+                } transition-all duration-700 ${
+                  isItemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+                }`}
               >
                 {!isExpanded ? (
                   /* Category Tile - Only shown when collapsed */

@@ -577,7 +577,7 @@ export const serviceCategories: ServiceCategory[] = [
   //   ]
   // },
   {
-    category: "Tatuaje",
+    category: "Tatuajes",
     image: tatuajeImage,
     treatments: [
       {
