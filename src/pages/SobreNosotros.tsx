@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
+import { ImageGallery } from "@/components/ImageGallery";
 import clinica1Image from "@/assets/clinica-1.jpeg";
 import clinica2Image from "@/assets/clinica-2.jpeg";
 import clinica3Image from "@/assets/clinica-3.jpeg";
@@ -13,7 +14,7 @@ const SobreNosotros = () => {
         {/* Hero Section with Background Image */}
         <section className="relative h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden flex items-center">
           {/* Background Image */}
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-bottom bg-no-repeat"
             style={{ backgroundImage: `url(${clinica3Image})` }}
           >
@@ -74,27 +75,21 @@ const SobreNosotros = () => {
               <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
                 Nuestra Clínica
               </h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {[clinica1Image, clinica2Image, clinica3Image].map((image, index) => (
-                  <div 
-                    key={index}
-                    className="aspect-[4/3] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
-                  >
-                    <img 
-                      src={image} 
-                      alt={`Zenith Clinic - Instalación ${index + 1}`}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                ))}
-              </div>
+              <ImageGallery
+                images={[
+                  { src: clinica1Image, title: 'Recepción y zona de bienvenida' },
+                  { src: clinica2Image, title: 'Sala de tratamientos' },
+                  { src: clinica3Image, title: 'Zona de espera y productos' },
+                ]}
+                altText="Zenith Clinic - Instalación"
+              />
             </div>
           </div>
         </section>
 
         {/* Contact Section */}
         <About />
-        
+
         <Footer />
       </main>
     </>
