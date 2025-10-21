@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Gift, Heart, Sparkles, Check } from "lucide-react";
 import { businessInfo } from "@/data/businessInfo";
-import clinica2Image from "@/assets/clinica-2.jpeg";
+import clinica2Image from "@/assets/clinica/clinica-2.jpeg";
 
 const TarjetasRegalo = () => {
   const giftCardAmounts = [
@@ -26,7 +26,7 @@ const TarjetasRegalo = () => {
         {/* Hero Section with Background Image */}
         <section className="relative h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden flex items-center">
           {/* Background Image */}
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${clinica2Image})` }}
           >
@@ -56,8 +56,8 @@ const TarjetasRegalo = () => {
                 El Regalo Perfecto
               </h2>
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-8">
-                Nuestras tarjetas regalo son la forma ideal de sorprender a alguien especial. 
-                Permiten elegir entre todos nuestros tratamientos de medicina estética, masajes, 
+                Nuestras tarjetas regalo son la forma ideal de sorprender a alguien especial.
+                Permiten elegir entre todos nuestros tratamientos de medicina estética, masajes,
                 y cuidados faciales, adaptándose perfectamente a los gustos y necesidades de cada persona.
               </p>
             </div>

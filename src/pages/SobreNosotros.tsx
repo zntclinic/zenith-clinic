@@ -2,9 +2,9 @@ import { Navigation } from "@/components/Navigation";
 import { About } from "@/components/About";
 import { Footer } from "@/components/Footer";
 import { ImageGallery } from "@/components/ImageGallery";
-import clinica1Image from "@/assets/clinica-1.jpeg";
-import clinica2Image from "@/assets/clinica-2.jpeg";
-import clinica3Image from "@/assets/clinica-3.jpeg";
+import clinica1Image from "@/assets/clinica/clinica-1.jpeg";
+import clinica2Image from "@/assets/clinica/clinica-2.jpeg";
+import clinica3Image from "@/assets/clinica/clinica-3.jpeg";
 
 const SobreNosotros = () => {
   return (

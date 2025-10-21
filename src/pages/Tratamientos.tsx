@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import clinica1Image from "@/assets/clinica-2.jpeg";
+import clinica1Image from "@/assets/clinica/clinica-2.jpeg";
 import { treatments } from "@/data/treatments";
 
 const Tratamientos = () => {
@@ -11,7 +11,7 @@ const Tratamientos = () => {
         {/* Hero Section with Background Image */}
         <section className="relative h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden flex items-center">
           {/* Background Image */}
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: `url(${clinica1Image})` }}
           >
@@ -35,7 +35,7 @@ const Tratamientos = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-5xl mx-auto space-y-12">
               {treatments.map((treatment, index) => (
-                <div 
+                <div
                   key={index}
                   className="bg-gray-50 rounded-2xl p-8 md:p-10 hover:shadow-lg transition-shadow duration-300"
                 >
@@ -50,7 +50,7 @@ const Tratamientos = () => {
             </div>
           </div>
         </section>
-        
+
         <Footer />
       </main>
     </>

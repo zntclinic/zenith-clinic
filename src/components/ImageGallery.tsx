@@ -74,7 +74,7 @@ export const ImageGallery = ({ images, altText }: ImageGalleryProps) => {
               {images.map((image, index) => (
                 <div key={index} className="w-full flex-shrink-0">
                   <div
-                    className="relative cursor-pointer flex items-center justify-center"
+                    className="relative cursor-pointer flex items-center justify-center group"
                     onClick={() => openModal(index)}
                     style={{ maxHeight: '70vh' }}
                   >
@@ -84,8 +84,8 @@ export const ImageGallery = ({ images, altText }: ImageGalleryProps) => {
                       className="w-full h-auto max-h-[70vh] object-contain"
                     />
                     {/* Overlay on hover */}
-                    <div className="absolute inset-0 bg-black/0 hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-                      <div className="opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center pointer-events-none">
+                      <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                         <div className="bg-white/90 rounded-full p-3">
                           <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
@@ -142,7 +142,7 @@ export const ImageGallery = ({ images, altText }: ImageGalleryProps) => {
         {images.map((image, index) => (
           <div
             key={index}
-            className="rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer group"
+            className="relative rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer group"
             onClick={() => openModal(index)}
           >
             <img
@@ -151,7 +151,7 @@ export const ImageGallery = ({ images, altText }: ImageGalleryProps) => {
               className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300 block"
             />
             {/* Overlay on hover */}
-            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center pointer-events-none">
               <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="bg-white/90 rounded-full p-3">
                   <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
