@@ -5,6 +5,11 @@ import { ImageGallery } from "@/components/ImageGallery";
 import clinica1Image from "@/assets/clinica/clinica-1.jpeg";
 import clinica2Image from "@/assets/clinica/clinica-2.jpeg";
 import clinica3Image from "@/assets/clinica/clinica-3.jpeg";
+import clinica4Image from "@/assets/clinica/clinica-4.jpeg";
+import clinica5Image from "@/assets/clinica/clinica-5.jpeg";
+import clinica6Image from "@/assets/clinica/clinica-6.jpeg";
+import clinica7Image from "@/assets/clinica/clinica-7.jpeg";
+import clinica8Image from "@/assets/clinica/clinica-8.jpeg";
 
 const SobreNosotros = () => {
   return (
@@ -80,8 +85,13 @@ const SobreNosotros = () => {
                   { src: clinica1Image, title: 'Recepción y zona de bienvenida' },
                   { src: clinica2Image, title: 'Sala de tratamientos' },
                   { src: clinica3Image, title: 'Zona de espera y productos' },
+                  { src: clinica4Image, title: 'Área de consulta' },
+                  { src: clinica5Image, title: 'Sala de medicina estética' },
+                  { src: clinica6Image, title: 'Zona de relajación' },
+                  { src: clinica7Image, title: 'Cabina de tratamientos corporales' },
+                  { src: clinica8Image, title: 'Espacio de bienestar' },
                 ]}
-                altText="Zenith Clinic - Instalación"
+                altText="Zenith Clinic - Instalaciones"
               />
             </div>
           </div>

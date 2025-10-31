@@ -74,13 +74,13 @@ export const ImageGallery = ({ images, altText }: ImageGalleryProps) => {
               {images.map((image, index) => (
                 <div key={index} className="w-full flex-shrink-0">
                   <div
-                    className="relative flex items-center justify-center"
+                    className="relative flex items-center justify-center overflow-hidden rounded-2xl"
                     style={{ maxHeight: '70vh' }}
                   >
                     <img
                       src={image.src}
                       alt={(image.title ?? altText ?? 'Imagen') + ` ${index + 1}`}
-                      className="w-full h-auto max-h-[70vh] object-contain"
+                      className="w-full h-auto max-h-[70vh] object-cover rounded-2xl"
                     />
                   </div>
                 </div>
