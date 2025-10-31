@@ -37,7 +37,7 @@ const TarjetasRegalo = () => {
           {/* Content */}
           <div className="relative z-10 container mx-auto px-4">
             <div className="flex items-center justify-center mb-6">
-              <Gift className="w-16 h-16 text-secondary" />
+              <Gift className="w-16 h-16 text-black" />
             </div>
             <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-center text-black mb-6">
               Tarjetas Regalo
