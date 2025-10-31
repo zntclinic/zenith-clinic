@@ -8,6 +8,7 @@ import pestanasImage from "@/assets/pestanhas/pestanhas.jpeg";
 import tatuajeImage from "@/assets/tatuaje.jpeg";
 import cejasImage from "@/assets/cejas/cejas.jpeg";
 import laserImage from "@/assets/laser/laser.jpeg";
+import nutricionImage from "@/assets/nutricion/nutricion.jpeg";
 // Medicina Estética category image
 import medicinaEsteticaImage from "@/assets/medicinaEstetica/medicina-estetica.jpeg";
 
@@ -451,7 +452,7 @@ export const serviceCategories: ServiceCategory[] = [
         description: "Primera sesión de micropigmentación para labios o cejas con diseño personalizado y color natural.",
         price: "350€",
         duration: "120 min",
-        image: microCejasImage
+        image: microLabiosImage
       },
       {
         name: "Repaso Micropigmentación (Al Mes)",
@@ -645,6 +646,19 @@ export const serviceCategories: ServiceCategory[] = [
         price: "15€",
         duration: "30 min",
         image: pestanasRetiradaImage
+      }
+    ]
+  },
+  {
+    category: "Nutrición",
+    image: nutricionImage,
+    treatments: [
+      {
+        name: "Consulta",
+        description: "Consulta nutricional para evaluar el estado general de salud y nutricional y establecer un plan de alimentación adecuado.",
+        price: "Consultar",
+        duration: "-",
+        image: nutricionImage
       }
     ]
   },
