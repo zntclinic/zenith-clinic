@@ -63,7 +63,7 @@ import radiesseImage from "@/assets/medicinaEstetica/radiesse.jpeg";
 import sculptraImage from "@/assets/medicinaEstetica/sculptra.jpeg";
 import vitaminasFacialesImage from "@/assets/medicinaEstetica/vitaminas-faciales.jpeg";
 import vitaminasPeriocularesImage from "@/assets/medicinaEstetica/vitaminas-perioculares.jpeg";
-import hidratacionProfundaImage from "@/assets/medicinaEstetica/hidratación-profunda.jpeg";
+import hidratacionProfundaImage from "@/assets/medicinaEstetica/hidratacion-profunda.jpeg";
 import profhiloImage from "@/assets/medicinaEstetica/profhilo.jpeg";
 import endoliftImage from "@/assets/medicinaEstetica/endolift.jpeg";
 
