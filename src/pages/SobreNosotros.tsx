@@ -64,11 +64,9 @@ const SobreNosotros = () => {
               <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-8 text-center">
                 La Filosofía de Zenith Clinic
               </h2>
-              <div className="bg-white rounded-2xl p-8 md:p-10 shadow-lg">
-                <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-                  En Zenith Clinic creemos que la belleza auténtica nace del equilibrio entre la ciencia y la sensibilidad. Nuestra filosofía une tecnología avanzada, cosmética natural y un enfoque humano que entiende cada piel como única. Buscamos resultados visibles, sí, pero también una experiencia que inspire bienestar, confianza y armonía interior.
-                </p>
-              </div>
+              <p className="text-foreground text-base md:text-lg leading-relaxed text-center">
+                En Zenith Clinic creemos que la belleza auténtica nace del equilibrio entre la ciencia y la sensibilidad. Nuestra filosofía une tecnología avanzada, cosmética natural y un enfoque humano que entiende cada piel como única. Buscamos resultados visibles, sí, pero también una experiencia que inspire bienestar, confianza y armonía interior.
+              </p>
             </div>
           </div>
         </section>
