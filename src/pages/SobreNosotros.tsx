@@ -9,7 +9,7 @@ import clinica4Image from "@/assets/clinica/clinica-4.jpeg";
 import clinica5Image from "@/assets/clinica/clinica-5.jpeg";
 import clinica6Image from "@/assets/clinica/clinica-6.jpeg";
 import clinica7Image from "@/assets/clinica/clinica-7.jpeg";
-import clinica8Image from "@/assets/clinica/clinica-8.jpeg";
+
 
 const SobreNosotros = () => {
   return (
@@ -21,10 +21,10 @@ const SobreNosotros = () => {
           {/* Background Image */}
           <div
             className="absolute inset-0 bg-cover bg-bottom bg-no-repeat"
-            style={{ backgroundImage: `url(${clinica3Image})` }}
+            style={{ backgroundImage: `url(${clinica5Image})` }}
           >
             {/* Beige Overlay */}
-            <div className="absolute inset-0 bg-[#f5f5dc]/70"></div>
+            <div className="absolute inset-0 bg-overlay/70"></div>
           </div>
 
           {/* Content */}
@@ -58,7 +58,7 @@ const SobreNosotros = () => {
         </section>
 
         {/* Philosophy Section */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-16 bg-primary/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
@@ -89,7 +89,7 @@ const SobreNosotros = () => {
                   { src: clinica5Image, title: 'Sala de medicina estética' },
                   { src: clinica6Image, title: 'Zona de relajación' },
                   { src: clinica7Image, title: 'Cabina de tratamientos corporales' },
-                  { src: clinica8Image, title: 'Espacio de bienestar' },
+
                 ]}
                 altText="Zenith Clinic - Instalaciones"
               />

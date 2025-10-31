@@ -16,7 +16,7 @@ const Tratamientos = () => {
             style={{ backgroundImage: `url(${clinica1Image})` }}
           >
             {/* Beige Overlay */}
-            <div className="absolute inset-0 bg-[#f5f5dc]/70"></div>
+            <div className="absolute inset-0 bg-overlay/70"></div>
           </div>
 
           {/* Content */}
@@ -37,7 +37,7 @@ const Tratamientos = () => {
               {treatments.map((treatment, index) => (
                 <div
                   key={index}
-                  className="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 relative"
+                  className="bg-gradient-to-br from-primary/20 via-primary/15 to-primary/10 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 relative"
                 >
                   {/* Content - This ALONE defines the container height */}
                   <div className={`p-8 md:p-10 ${index % 2 === 0 ? 'md:ml-[50%]' : 'md:mr-[50%]'}`}>

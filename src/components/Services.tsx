@@ -32,11 +32,9 @@ export const Services = () => {
               <div
                 key={categoryIndex}
                 {...getItemProps(categoryIndex)}
-                className={`${
-                  isExpanded ? "md:col-span-2 lg:col-span-3" : ""
-                } transition-all duration-700 ${
-                  isItemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-                }`}
+                className={`${isExpanded ? "md:col-span-2 lg:col-span-3" : ""
+                  } transition-all duration-700 ${isItemVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+                  }`}
               >
                 {!isExpanded ? (
                   /* Category Tile - Only shown when collapsed */
@@ -135,7 +133,7 @@ export const Services = () => {
                             {treatment.description}
                           </p>
                           <div className="flex items-center justify-between mb-4">
-                            <div className="text-2xl font-bold text-primary">
+                            <div className="text-2xl font-bold text-secondary">
                               {treatment.price}
                             </div>
                             {treatment.duration && (
@@ -145,7 +143,7 @@ export const Services = () => {
                             )}
                           </div>
                           <button
-                            className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+                            className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
                             onClick={(e) => {
                               e.stopPropagation();
                               window.open(businessInfo.booking.booksySimple, "_blank");

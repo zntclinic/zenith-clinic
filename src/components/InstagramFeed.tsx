@@ -53,16 +53,16 @@ export const InstagramFeed = () => {
   }, [maxSlide]);
 
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-16 bg-primary/30">
       <div className="w-full px-8 md:px-16 lg:px-24">
 
         {/* Instagram Carousel - One Post at a Time */}
         <div className="relative w-full">
           {/* Carousel Container */}
           <div className="overflow-hidden">
-            <div 
+            <div
               className="flex transition-transform duration-500 ease-in-out"
-              style={{ 
+              style={{
                 transform: `translateX(-${currentSlide * (100 / postsPerView)}%)`
               }}
             >
@@ -70,8 +70,8 @@ export const InstagramFeed = () => {
                 <div key={index} className="flex-shrink-0" style={{ width: `${100 / postsPerView}%` }}>
                   <div className="w-full flex justify-center">
                     <div style={{ transform: 'scale(0.9)', transformOrigin: 'center' }}>
-                      <InstagramEmbed 
-                        url={postUrl} 
+                      <InstagramEmbed
+                        url={postUrl}
                         width={320}
                       />
                     </div>
@@ -89,7 +89,7 @@ export const InstagramFeed = () => {
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
-          
+
           <button
             onClick={nextSlide}
             className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 z-10"
@@ -104,11 +104,10 @@ export const InstagramFeed = () => {
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentSlide
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${index === currentSlide
                     ? 'bg-primary scale-125'
                     : 'bg-gray-300 hover:bg-gray-400'
-                }`}
+                  }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
             ))}

@@ -19,7 +19,7 @@ export const Hero = () => {
       </video>
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-[#f5f5dc]/70 z-10" />
+      <div className="absolute inset-0 bg-overlay/70 z-10" />
 
       {/* Business Name and Buttons - Centered on mobile, Left on desktop */}
       <div className="absolute bottom-52 sm:bottom-12 md:bottom-16 left-1/2 transform -translate-x-1/2 sm:left-8 md:left-12 lg:left-24 sm:transform-none z-20">

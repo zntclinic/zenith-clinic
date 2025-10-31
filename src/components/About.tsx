@@ -2,8 +2,9 @@ import { MapPin, Clock, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { WhatsAppIcon } from "@/components/icons/SocialIcons";
 import { businessInfo } from "@/data/businessInfo";
+
 export const About = () => {
-  return <section id="sobre-nosotros" className="py-24 bg-gray-50">
+  return <section id="sobre-nosotros" className="py-24 bg-primary/30">
     <div className="container mx-auto px-4">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
         {/* Map Section */}
@@ -20,12 +21,12 @@ export const About = () => {
             EXPERIMENTA {businessInfo.name}
           </h2>
 
-          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">¿Lista para experimentar lo mejor de tu vida? Reserva tu cita hoy y déjanos mimarte.</p>
+          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">Descubre una experiencia única de bienestar y belleza. Agenda tu cita y permítenos cuidar de ti con la atención que mereces.</p>
 
           <div className="space-y-6 mb-8">
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
-                <MapPin size={20} className="text-gray-600" />
+              <div className="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center">
+                <MapPin size={20} className="text-secondary" />
               </div>
               <span className="text-lg font-medium text-foreground">
                 {businessInfo.address.full}
@@ -33,8 +34,8 @@ export const About = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
-                <Clock size={20} className="text-gray-600" />
+              <div className="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center">
+                <Clock size={20} className="text-secondary" />
               </div>
               <div className="text-lg font-medium text-foreground">
                 {businessInfo.hours.display}
@@ -42,8 +43,8 @@ export const About = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
-                <Phone size={20} className="text-gray-600" />
+              <div className="w-12 h-12 bg-secondary/20 rounded-full flex items-center justify-center">
+                <Phone size={20} className="text-secondary" />
               </div>
               <span className="text-lg font-medium text-foreground">
                 {businessInfo.contact.phoneFormatted}
@@ -51,8 +52,8 @@ export const About = () => {
             </div>
           </div>
 
-          <Button size="lg" className="bg-green-500 text-white hover:bg-green-600 font-semibold px-8 py-3 w-fit flex items-center gap-2" onClick={() => window.open(businessInfo.contact.whatsapp, '_blank')}>
-            <WhatsAppIcon className="w-5 h-5 text-white" />
+          <Button size="lg" className="bg-secondary text-secondary-foreground hover:bg-secondary/90 font-semibold px-8 py-3 w-fit flex items-center gap-2" onClick={() => window.open(businessInfo.contact.whatsapp, '_blank')}>
+            <WhatsAppIcon className="w-5 h-5" />
             Contactar
           </Button>
         </div>

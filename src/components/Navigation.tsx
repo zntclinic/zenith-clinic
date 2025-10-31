@@ -54,8 +54,11 @@ export const Navigation = () => {
               Tarjetas Regalo
             </Link>
             <Button
-              variant="elegant"
               size="default"
+              className={`transition-all duration-300 ${isScrolled
+                ? 'bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-elegant'
+                : 'bg-white text-black hover:bg-gray-100 shadow-soft'
+                }`}
               onClick={() => window.open(businessInfo.booking.booksy, '_blank')}
             >
               Reserva
@@ -64,7 +67,7 @@ export const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden transition-colors text-black"
+            className="md:hidden transition-colors text-secondary"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -100,8 +103,11 @@ export const Navigation = () => {
                 Tarjetas Regalo
               </Link>
               <Button
-                variant="elegant"
                 size="default"
+                className={`transition-all duration-300 ${isScrolled
+                  ? 'bg-secondary text-secondary-foreground hover:bg-secondary/80 shadow-elegant'
+                  : 'bg-white text-black hover:bg-gray-100 shadow-soft'
+                  }`}
                 onClick={() => window.open(businessInfo.booking.booksy, '_blank')}
               >
                 Reserva

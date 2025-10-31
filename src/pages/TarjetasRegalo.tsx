@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Gift, Heart, Sparkles, Check } from "lucide-react";
 import { businessInfo } from "@/data/businessInfo";
-import clinica2Image from "@/assets/clinica/clinica-2.jpeg";
+import clinica1Image from "@/assets/clinica/clinica-1.jpeg";
 
 const TarjetasRegalo = () => {
   const giftCardAmounts = [
@@ -28,16 +28,16 @@ const TarjetasRegalo = () => {
           {/* Background Image */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${clinica2Image})` }}
+            style={{ backgroundImage: `url(${clinica1Image})` }}
           >
             {/* Beige Overlay */}
-            <div className="absolute inset-0 bg-[#f5f5dc]/70"></div>
+            <div className="absolute inset-0 bg-overlay/70"></div>
           </div>
 
           {/* Content */}
           <div className="relative z-10 container mx-auto px-4">
             <div className="flex items-center justify-center mb-6">
-              <Gift className="w-16 h-16 text-black" />
+              <Gift className="w-16 h-16 text-secondary" />
             </div>
             <h1 className="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold text-center text-black mb-6">
               Tarjetas Regalo
@@ -65,7 +65,7 @@ const TarjetasRegalo = () => {
         </section>
 
         {/* Gift Card Amounts Section */}
-        <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <section className="py-16 bg-primary/30">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
@@ -75,19 +75,19 @@ const TarjetasRegalo = () => {
                 {giftCardAmounts.map((card) => (
                   <div
                     key={card.amount}
-                    className={`relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 ${card.popular ? 'ring-2 ring-primary' : ''
+                    className={`relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 ${card.popular ? 'ring-2 ring-secondary' : ''
                       }`}
                   >
                     {card.popular && (
                       <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                        <span className="bg-primary text-white text-xs font-bold px-4 py-1 rounded-full">
+                        <span className="bg-secondary text-secondary-foreground text-xs font-bold px-4 py-1 rounded-full">
                           Más Popular
                         </span>
                       </div>
                     )}
                     <div className="text-center">
                       <div className="mb-4">
-                        <Sparkles className="w-12 h-12 text-primary mx-auto" />
+                        <Sparkles className="w-12 h-12 text-secondary mx-auto" />
                       </div>
                       <div className="font-playfair text-5xl font-bold text-foreground mb-2">
                         {card.amount}€
@@ -97,7 +97,7 @@ const TarjetasRegalo = () => {
                       </p>
                       <button
                         onClick={() => window.open(businessInfo.contact.whatsapp, '_blank')}
-                        className="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
+                        className="w-full bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold py-3 px-6 rounded-lg transition-colors duration-200"
                       >
                         Solicitar
                       </button>
@@ -125,11 +125,11 @@ const TarjetasRegalo = () => {
                 {benefits.map((benefit, index) => (
                   <div
                     key={index}
-                    className="flex items-start gap-4 bg-gray-50 rounded-xl p-6"
+                    className="flex items-start gap-4 bg-secondary/15 rounded-xl p-6"
                   >
                     <div className="flex-shrink-0">
-                      <div className="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-                        <Check className="w-5 h-5 text-primary" />
+                      <div className="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center">
+                        <Check className="w-5 h-5 text-secondary" />
                       </div>
                     </div>
                     <p className="text-foreground font-medium pt-2">{benefit}</p>
@@ -141,7 +141,7 @@ const TarjetasRegalo = () => {
         </section>
 
         {/* How it Works Section */}
-        <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <section className="py-16 bg-primary/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
@@ -149,7 +149,7 @@ const TarjetasRegalo = () => {
               </h2>
               <div className="space-y-8">
                 <div className="flex items-start gap-6">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">
+                  <div className="flex-shrink-0 w-12 h-12 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center font-bold text-xl">
                     1
                   </div>
                   <div>
@@ -162,7 +162,7 @@ const TarjetasRegalo = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-6">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">
+                  <div className="flex-shrink-0 w-12 h-12 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center font-bold text-xl">
                     2
                   </div>
                   <div>
@@ -175,7 +175,7 @@ const TarjetasRegalo = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-6">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center font-bold text-xl">
+                  <div className="flex-shrink-0 w-12 h-12 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center font-bold text-xl">
                     3
                   </div>
                   <div>
@@ -196,7 +196,7 @@ const TarjetasRegalo = () => {
         <section className="py-16 bg-primary/5">
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
-              <Heart className="w-16 h-16 text-primary mx-auto mb-6" />
+              <Heart className="w-16 h-16 text-secondary mx-auto mb-6" />
               <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-6">
                 ¿Listo para hacer un Regalo Especial?
               </h2>
@@ -206,13 +206,13 @@ const TarjetasRegalo = () => {
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button
                   onClick={() => window.open(businessInfo.contact.whatsapp, '_blank')}
-                  className="bg-primary hover:bg-primary/90 text-white font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-lg"
+                  className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-lg"
                 >
                   Contactar por WhatsApp
                 </button>
                 <button
                   onClick={() => window.location.href = `tel:${businessInfo.contact.phone}`}
-                  className="bg-white hover:bg-gray-50 text-foreground font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-lg border-2 border-gray-200"
+                  className="bg-white hover:bg-gray-50 text-foreground font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-lg border-2 border-secondary/30"
                 >
                   Llamar ahora
                 </button>

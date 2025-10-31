@@ -116,7 +116,7 @@ export const ImageGallery = ({ images, altText }: ImageGalleryProps) => {
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-2 h-2 rounded-full transition-colors duration-200 ${index === currentSlide ? 'bg-primary' : 'bg-gray-300'
+                className={`w-2 h-2 rounded-full transition-colors duration-200 ${index === currentSlide ? 'bg-secondary' : 'bg-gray-300'
                   }`}
                 aria-label={`Ir a imagen ${index + 1}`}
               />
