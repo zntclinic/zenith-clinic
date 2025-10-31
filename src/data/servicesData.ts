@@ -9,6 +9,12 @@ import tatuajeImage from "@/assets/tatuaje.jpeg";
 import cejasImage from "@/assets/cejas/cejas.jpeg";
 import laserImage from "@/assets/laser/laser.jpeg";
 import nutricionImage from "@/assets/nutricion/nutricion.jpeg";
+// Tratamientos corporales images
+import tratamientosCorporalesImage from "@/assets/tratamientosCorporales/tratamientos-corporales.jpeg";
+import radiofrecuenciaCorporalImage from "@/assets/tratamientosCorporales/radiofrecuencia-corporal.png";
+import cavitacionImage from "@/assets/tratamientosCorporales/cavitacion.png";
+import diagnosticoCorporalImage from "@/assets/tratamientosCorporales/diagnostico-corporal.png";
+import piernasCansadasImage from "@/assets/tratamientosCorporales/piernas-cansadas.png";
 // Medicina Estética category image
 import medicinaEsteticaImage from "@/assets/medicinaEstetica/medicina-estetica.jpeg";
 
@@ -471,6 +477,213 @@ export const serviceCategories: ServiceCategory[] = [
     ]
   },
   {
+    category: "Pestañas",
+    image: pestanasImage,
+    treatments: [
+      {
+        name: "Pestañas Técnica Clásica (1ª Puesta)",
+        description: "Primera aplicación de extensiones de pestañas con técnica clásica para conseguir mayor longitud y volumen.",
+        price: "70€",
+        duration: "150 min",
+        image: pestanasClasicaImage
+      },
+      {
+        name: "Pestañas Efecto Rímel/Mojado (1ª Puesta)",
+        description: "Primera aplicación de extensiones con efecto rímel o mojado para una mirada intensa y definida.",
+        price: "75€",
+        duration: "150 min",
+        image: pestanasRimelImage
+      },
+      {
+        name: "Repaso Pestañas Efecto Rímel/Mojado (3 Semanas)",
+        description: "Repaso de extensiones con efecto rímel/mojado cada 3 semanas para mantener el resultado perfecto.",
+        price: "55€",
+        duration: "90 min",
+        image: pestanasRimelImage
+      },
+      {
+        name: "Pestañas Volumen 2D/3D/Fibra Tecnológica",
+        description: "Aplicación de extensiones con técnica de volumen 2D/3D o fibra tecnológica para máxima densidad.",
+        price: "80€",
+        duration: "150 min",
+        image: pestanasVolumenImage
+      },
+      {
+        name: "Repaso Pestañas Volumen 2D/3D/Fibra Tecnológica",
+        description: "Repaso de extensiones con volumen 2D/3D cada 3 semanas para mantener la densidad y forma.",
+        price: "60€",
+        duration: "90 min",
+        image: pestanasVolumenImage
+      },
+      {
+        name: "Retirada de Extensiones",
+        description: "Retirada profesional de extensiones de pestañas de forma segura y sin dañar las pestañas naturales.",
+        price: "15€",
+        duration: "30 min",
+        image: pestanasRetiradaImage
+      }
+    ]
+  },
+  // Temporarily hidden services
+  // {
+  //   category: "Manicura",
+  //   image: manicuraImage,
+  //   treatments: [
+  //     {
+  //       name: "Esmaltado Semipermanente",
+  //       description: "Esmaltado semipermanente de larga duración que mantiene el brillo y color perfecto hasta 3 semanas.",
+  //       price: "30€",
+  //       duration: "90 min"
+  //     },
+  //     {
+  //       name: "Arreglo Uña Rota",
+  //       description: "Reparación profesional de uñas rotas o dañadas para restaurar su forma y resistencia.",
+  //       price: "6€",
+  //       duration: "15 min"
+  //     },
+  //     {
+  //       name: "Decoración Elaborada",
+  //       description: "Decoración artística elaborada por uña para diseños únicos y personalizados.",
+  //       price: "1€/uña",
+  //       duration: "5 min"
+  //     },
+  //     {
+  //       name: "Esmaltado Semipermanente Francesa",
+  //       description: "Esmaltado semipermanente con diseño francés clásico y elegante de larga duración.",
+  //       price: "35€",
+  //       duration: "105 min"
+  //     },
+  //     {
+  //       name: "Retirar Semipermanente",
+  //       description: "Retirada profesional del esmalte semipermanente sin dañar la uña natural.",
+  //       price: "10€",
+  //       duration: "20 min"
+  //     },
+  //     {
+  //       name: "Retirar Acrygel",
+  //       description: "Retirada profesional del acrílico y gel sin dañar la uña natural.",
+  //       price: "12€",
+  //       duration: "30 min"
+  //     },
+  //     {
+  //       name: "Retirar + Limar Semipermanente",
+  //       description: "Retirada y limado profesional del esmalte semipermanente para preparar las uñas.",
+  //       price: "14€",
+  //       duration: "30 min"
+  //     },
+  //     {
+  //       name: "Retirar + Limar Acr+gel",
+  //       description: "Retirada y limado profesional del acrílico y gel para preparar las uñas para un nuevo tratamiento.",
+  //       price: "16€",
+  //       duration: "35 min"
+  //     }
+  //   ]
+  // },
+  // {
+  //   category: "Pedicura",
+  //   image: pedicuraImage,
+  //   treatments: [
+  //     {
+  //       name: "Pedicura Básica",
+  //       description: "Cuidado básico de pies y uñas con limpieza, limado y esmaltado tradicional.",
+  //       price: "25€",
+  //       duration: "40 min"
+  //     },
+  //     {
+  //       name: "Pedicura Talones Secos",
+  //       description: "Tratamiento especializado para talones secos con limpieza con torno, exfoliación e hidratación profunda.",
+  //       price: "30€",
+  //       duration: "50 min"
+  //     },
+  //     {
+  //       name: "Pedicura Completa",
+  //       description: "Tratamiento completo de pedicura con limpieza con torno, exfoliación, hidratación y esmaltado semipermanente.",
+  //       price: "40€",
+  //       duration: "120 min"
+  //     }
+  //   ]
+  // },
+  {
+    category: "Tatuajes",
+    image: tatuajeImage,
+    treatments: [
+      {
+        name: "Consulta previa tatuaje",
+        description: "Consulta gratuita previa para diseñar y planificar tu tatuaje personalizado con nuestros profesionales.",
+        price: "Gratis",
+        duration: "10 min"
+      }
+    ]
+  },
+  {
+    category: "Cejas",
+    image: cejasImage,
+    treatments: [
+      {
+        name: "Diseño de cejas + tinte",
+        description: "Diseño profesional de cejas con tinte para definir y oscurecer el color natural de las cejas.",
+        price: "20€",
+        duration: "30 min",
+        image: cejasTinteImage
+      },
+      {
+        name: "Diseño de cejas + depilación",
+        description: "Diseño y depilación profesional de cejas para conseguir la forma perfecta y definir el arco.",
+        price: "10€",
+        duration: "15 min",
+        image: cejasDepilacionImage
+      }
+    ]
+  },
+  {
+    category: "Tratamientos corporales",
+    image: tratamientosCorporalesImage,
+    treatments: [
+      {
+        name: "Radiofrecuencia corporal",
+        description: "Tratamiento no invasivo que reafirma y tonifica la silueta. Estimula colágeno, mejora circulación y reduce flacidez. Resultados visibles desde las primeras sesiones.",
+        price: "65€",
+        duration: "60 min",
+        image: radiofrecuenciaCorporalImage
+      },
+      {
+        name: "Bono 12 sesiones de radiofrecuencia corporal",
+        description: "Bono para resultados visibles y duraderos. Reafirma, tonifica y mejora la textura de la piel. Efecto lifting corporal sin cirugía.",
+        price: "500€",
+        duration: "60 min",
+        image: radiofrecuenciaCorporalImage
+      },
+      {
+        name: "Cavitación",
+        description: "Ultrasonidos de baja frecuencia para eliminar grasa localizada. Favorece eliminación de líquidos y toxinas. Ideal para abdomen, muslos, glúteos o brazos.",
+        price: "55€",
+        duration: "45 min",
+        image: cavitacionImage
+      },
+      {
+        name: "Bono 12 sesiones de cavitación",
+        description: "Bono ideal para reducir grasa localizada progresivamente. Ultrasonidos que rompen células grasas. 12 sesiones para resultados visibles y duraderos.",
+        price: "400€",
+        duration: "45 min",
+        image: cavitacionImage
+      },
+      {
+        name: "Diagnóstico corporal",
+        description: "Evaluación personalizada de tu cuerpo y objetivos estéticos. Analizamos grasa, retención de líquidos y firmeza. Diseñamos un plan de tratamiento adaptado a ti.",
+        price: "Gratis",
+        duration: "30 min",
+        image: diagnosticoCorporalImage
+      },
+      {
+        name: "Tratamiento Piernas Cansadas + Vendas",
+        description: "Maniobras suaves y drenantes que activan la circulación. Relaja la tensión muscular. Combinado con vendas frías.",
+        price: "50€",
+        duration: "45 min",
+        image: piernasCansadasImage
+      }
+    ]
+  },
+  {
     category: "Medicina Estética",
     image: medicinaEsteticaImage,
     treatments: [
@@ -602,54 +815,6 @@ export const serviceCategories: ServiceCategory[] = [
     ]
   },
   {
-    category: "Pestañas",
-    image: pestanasImage,
-    treatments: [
-      {
-        name: "Pestañas Técnica Clásica (1ª Puesta)",
-        description: "Primera aplicación de extensiones de pestañas con técnica clásica para conseguir mayor longitud y volumen.",
-        price: "70€",
-        duration: "150 min",
-        image: pestanasClasicaImage
-      },
-      {
-        name: "Pestañas Efecto Rímel/Mojado (1ª Puesta)",
-        description: "Primera aplicación de extensiones con efecto rímel o mojado para una mirada intensa y definida.",
-        price: "75€",
-        duration: "150 min",
-        image: pestanasRimelImage
-      },
-      {
-        name: "Repaso Pestañas Efecto Rímel/Mojado (3 Semanas)",
-        description: "Repaso de extensiones con efecto rímel/mojado cada 3 semanas para mantener el resultado perfecto.",
-        price: "55€",
-        duration: "90 min",
-        image: pestanasRimelImage
-      },
-      {
-        name: "Pestañas Volumen 2D/3D/Fibra Tecnológica",
-        description: "Aplicación de extensiones con técnica de volumen 2D/3D o fibra tecnológica para máxima densidad.",
-        price: "80€",
-        duration: "150 min",
-        image: pestanasVolumenImage
-      },
-      {
-        name: "Repaso Pestañas Volumen 2D/3D/Fibra Tecnológica",
-        description: "Repaso de extensiones con volumen 2D/3D cada 3 semanas para mantener la densidad y forma.",
-        price: "60€",
-        duration: "90 min",
-        image: pestanasVolumenImage
-      },
-      {
-        name: "Retirada de Extensiones",
-        description: "Retirada profesional de extensiones de pestañas de forma segura y sin dañar las pestañas naturales.",
-        price: "15€",
-        duration: "30 min",
-        image: pestanasRetiradaImage
-      }
-    ]
-  },
-  {
     category: "Nutrición",
     image: nutricionImage,
     treatments: [
@@ -659,117 +824,6 @@ export const serviceCategories: ServiceCategory[] = [
         price: "Consultar",
         duration: "-",
         image: nutricionImage
-      }
-    ]
-  },
-  // Temporarily hidden services
-  // {
-  //   category: "Manicura",
-  //   image: manicuraImage,
-  //   treatments: [
-  //     {
-  //       name: "Esmaltado Semipermanente",
-  //       description: "Esmaltado semipermanente de larga duración que mantiene el brillo y color perfecto hasta 3 semanas.",
-  //       price: "30€",
-  //       duration: "90 min"
-  //     },
-  //     {
-  //       name: "Arreglo Uña Rota",
-  //       description: "Reparación profesional de uñas rotas o dañadas para restaurar su forma y resistencia.",
-  //       price: "6€",
-  //       duration: "15 min"
-  //     },
-  //     {
-  //       name: "Decoración Elaborada",
-  //       description: "Decoración artística elaborada por uña para diseños únicos y personalizados.",
-  //       price: "1€/uña",
-  //       duration: "5 min"
-  //     },
-  //     {
-  //       name: "Esmaltado Semipermanente Francesa",
-  //       description: "Esmaltado semipermanente con diseño francés clásico y elegante de larga duración.",
-  //       price: "35€",
-  //       duration: "105 min"
-  //     },
-  //     {
-  //       name: "Retirar Semipermanente",
-  //       description: "Retirada profesional del esmalte semipermanente sin dañar la uña natural.",
-  //       price: "10€",
-  //       duration: "20 min"
-  //     },
-  //     {
-  //       name: "Retirar Acrygel",
-  //       description: "Retirada profesional del acrílico y gel sin dañar la uña natural.",
-  //       price: "12€",
-  //       duration: "30 min"
-  //     },
-  //     {
-  //       name: "Retirar + Limar Semipermanente",
-  //       description: "Retirada y limado profesional del esmalte semipermanente para preparar las uñas.",
-  //       price: "14€",
-  //       duration: "30 min"
-  //     },
-  //     {
-  //       name: "Retirar + Limar Acr+gel",
-  //       description: "Retirada y limado profesional del acrílico y gel para preparar las uñas para un nuevo tratamiento.",
-  //       price: "16€",
-  //       duration: "35 min"
-  //     }
-  //   ]
-  // },
-  // {
-  //   category: "Pedicura",
-  //   image: pedicuraImage,
-  //   treatments: [
-  //     {
-  //       name: "Pedicura Básica",
-  //       description: "Cuidado básico de pies y uñas con limpieza, limado y esmaltado tradicional.",
-  //       price: "25€",
-  //       duration: "40 min"
-  //     },
-  //     {
-  //       name: "Pedicura Talones Secos",
-  //       description: "Tratamiento especializado para talones secos con limpieza con torno, exfoliación e hidratación profunda.",
-  //       price: "30€",
-  //       duration: "50 min"
-  //     },
-  //     {
-  //       name: "Pedicura Completa",
-  //       description: "Tratamiento completo de pedicura con limpieza con torno, exfoliación, hidratación y esmaltado semipermanente.",
-  //       price: "40€",
-  //       duration: "120 min"
-  //     }
-  //   ]
-  // },
-  {
-    category: "Tatuajes",
-    image: tatuajeImage,
-    treatments: [
-      {
-        name: "Consulta previa tatuaje",
-        description: "Consulta gratuita previa para diseñar y planificar tu tatuaje personalizado con nuestros profesionales.",
-        price: "Gratis",
-        duration: "10 min"
-      }
-    ]
-  },
-  {
-    category: "Cejas",
-    image: cejasImage,
-    treatments: [
-      {
-        name: "Diseño de cejas + tinte",
-        description: "Diseño profesional de cejas con tinte para definir y oscurecer el color natural de las cejas.",
-        price: "20€",
-        duration: "30 min",
-        image: cejasTinteImage
-      },
-      {
-        name: "Diseño de cejas + depilación",
-        description: "Diseño y depilación profesional de cejas para conseguir la forma perfecta y definir el arco.",
-        price: "10€",
-        duration: "15 min",
-        image: cejasDepilacionImage
       }
     ]
   }
