@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock } from "lucide-react";
-import zenithVideo from "@/assets/zenith-video.mp4";
+import zenithVideo from "@/assets/clinica/entrada-clinica.mp4";
 import { WhatsAppIcon } from "./icons/SocialIcons";
 import { businessInfo } from "@/data/businessInfo";
 

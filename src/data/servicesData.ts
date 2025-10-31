@@ -8,6 +8,8 @@ import pestanasImage from "@/assets/pestanhas/pestanhas.jpeg";
 import tatuajeImage from "@/assets/tatuaje.jpeg";
 import cejasImage from "@/assets/cejas/cejas.jpeg";
 import laserImage from "@/assets/laser/laser.jpeg";
+// Medicina Estética category image
+import medicinaEsteticaImage from "@/assets/medicinaEstetica/medicina-estetica.jpeg";
 
 // Masaje treatment images
 import masajeAlbaricoqueImage from "@/assets/masajes/masaje-relajante-albaricoque.jpeg";
@@ -45,6 +47,24 @@ import pestanasRetiradaImage from "@/assets/pestanhas/retirada-extensiones.jpeg"
 // Cejas treatment images
 import cejasTinteImage from "@/assets/cejas/depilacion+tinte.jpeg";
 import cejasDepilacionImage from "@/assets/cejas/disenho+depilacion.jpeg";
+
+// Medicina Estética treatment images
+import labiosImage from "@/assets/medicinaEstetica/labios.jpeg";
+import mentonImage from "@/assets/medicinaEstetica/menton.jpeg";
+import rinomodelacionImage from "@/assets/medicinaEstetica/rinomodelacion.jpeg";
+import ojerasImage from "@/assets/medicinaEstetica/ojeras.jpeg";
+import armonizacionFacialImage from "@/assets/medicinaEstetica/armonizacion-facial.jpeg";
+import neuromoduladoresImage from "@/assets/medicinaEstetica/neuromoduladores.jpeg";
+import hiperhidrosisImage from "@/assets/medicinaEstetica/hiperhidrosis.jpeg";
+import bruxismoImage from "@/assets/medicinaEstetica/bruxismo.jpeg";
+import harmonyCaImage from "@/assets/medicinaEstetica/harmonyCa.jpeg";
+import radiesseImage from "@/assets/medicinaEstetica/radiesse.jpeg";
+import sculptraImage from "@/assets/medicinaEstetica/sculptra.jpeg";
+import vitaminasFacialesImage from "@/assets/medicinaEstetica/vitaminas-faciales.jpeg";
+import vitaminasPeriocularesImage from "@/assets/medicinaEstetica/vitaminas-perioculares.jpeg";
+import hidratacionProfundaImage from "@/assets/medicinaEstetica/hidratación-profunda.jpeg";
+import profhiloImage from "@/assets/medicinaEstetica/profhilo.jpeg";
+import endoliftImage from "@/assets/medicinaEstetica/endolift.jpeg";
 
 export interface Treatment {
   name: string;
@@ -446,6 +466,137 @@ export const serviceCategories: ServiceCategory[] = [
         price: "Gratis",
         duration: "90 min",
         image: microCejasImage
+      }
+    ]
+  },
+  {
+    category: "Medicina Estética",
+    image: medicinaEsteticaImage,
+    treatments: [
+      {
+        name: "Labios (1 vial)",
+        description: "Tratamiento con ácido hialurónico destinado a aumentar el volumen, definir el contorno y mejorar la hidratación de los labios, logrando un aspecto natural y armonioso.",
+        price: "410€",
+        duration: "—",
+        image: labiosImage
+      },
+      {
+        name: "Mentón (1 vial)",
+        description: "Infiltración de ácido hialurónico para proyectar y definir el mentón, equilibrando el perfil facial y mejorando la proporción del tercio inferior del rostro.",
+        price: "430€",
+        duration: "—",
+        image: mentonImage
+      },
+      {
+        name: "Rinomodelación (1 vial)",
+        description: "Alternativa no quirúrgica a la rinoplastia. Mediante el uso de ácido hialurónico se corrigen pequeñas imperfecciones nasales, elevando la punta o suavizando el dorso sin cirugía.",
+        price: "460€",
+        duration: "—",
+        image: rinomodelacionImage
+      },
+      {
+        name: "Mandibular (2 viales)",
+        description: "Definición del ángulo mandibular y línea de la mandíbula mediante ácido hialurónico, aportando estructura, firmeza y un contorno facial más marcado y armónico.",
+        price: "760€",
+        duration: "—"
+      },
+      {
+        name: "Ojeras (2 viales)",
+        description: "Tratamiento con ácido hialurónico de baja densidad para rellenar y suavizar el hundimiento de la zona infraorbitaria, mejorando el aspecto cansado y aportando luminosidad.",
+        price: "760€",
+        duration: "—",
+        image: ojerasImage
+      },
+      {
+        name: "Armonización facial (3–6 viales)",
+        description: "Procedimiento integral que combina infiltraciones en distintas áreas (pómulos, mentón, mandíbula, labios, etc.) para equilibrar las proporciones del rostro y realzar la belleza natural de manera global.",
+        price: "990€–1740€",
+        duration: "—",
+        image: armonizacionFacialImage
+      },
+      {
+        name: "Neuromoduladores tercio superior (64U)",
+        description: "Aplicación de toxina botulínica para relajar los músculos del tercio superior del rostro (frente, entrecejo y patas de gallo), suavizando arrugas dinámicas y logrando una expresión más descansada.",
+        price: "390€",
+        duration: "—",
+        image: neuromoduladoresImage
+      },
+      {
+        name: "Hiperhidrosis (100U)",
+        description: "Tratamiento con toxina botulínica que reduce la sudoración excesiva en axilas, manos o pies, bloqueando temporalmente la actividad de las glándulas sudoríparas.",
+        price: "690€",
+        duration: "—",
+        image: hiperhidrosisImage
+      },
+      {
+        name: "Bruxismo (aprox. 60U)",
+        description: "Infiltración de toxina botulínica en los músculos maseteros para disminuir la tensión mandibular, aliviar el rechinamiento dental y estilizar el tercio inferior del rostro.",
+        price: "450€",
+        duration: "—",
+        image: bruxismoImage
+      },
+      {
+        name: "HarmonyCa (2 viales + cánula)",
+        description: "Bioremodelador facial que combina ácido hialurónico y hidroxiapatita cálcica, estimulando la producción de colágeno y mejorando la firmeza y calidad de la piel.",
+        price: "690€",
+        duration: "—",
+        image: harmonyCaImage
+      },
+      {
+        name: "Radiesse (1 vial)",
+        description: "Relleno a base de hidroxiapatita cálcica que aporta soporte estructural y estimula el colágeno, ideal para redefinir contornos y mejorar la flacidez facial.",
+        price: "690€",
+        duration: "—",
+        image: radiesseImage
+      },
+      {
+        name: "Sculptra (1 vial)",
+        description: "Tratamiento bioestimulador con ácido poliláctico que reactiva la producción natural de colágeno, mejorando la firmeza y densidad cutánea de forma progresiva.",
+        price: "710€",
+        duration: "—",
+        image: sculptraImage
+      },
+      {
+        name: "Vitaminas faciales",
+        description: "Mesoterapia con un cóctel de vitaminas, minerales y ácido hialurónico que revitaliza la piel, mejora la hidratación y aporta luminosidad inmediata.",
+        price: "270€",
+        duration: "—",
+        image: vitaminasFacialesImage
+      },
+      {
+        name: "Vitaminas perioculares",
+        description: "Mesoterapia específica para la zona del contorno de ojos, que mejora la microcirculación, atenúa ojeras y aporta frescura a la mirada.",
+        price: "160€",
+        duration: "—",
+        image: vitaminasPeriocularesImage
+      },
+      {
+        name: "Hidratación profunda (Skinboosters)",
+        description: "Infiltraciones de ácido hialurónico de baja reticulación que hidratan en profundidad, mejoran la elasticidad y el aspecto general de la piel sin modificar su volumen.",
+        price: "290€",
+        duration: "—",
+        image: hidratacionProfundaImage
+      },
+      {
+        name: "Profhilo Clásico",
+        description: "Tratamiento de bio-remodelación dérmica con ácido hialurónico ultrapuro que hidrata, reafirma y mejora la elasticidad de la piel, sin efecto de relleno.",
+        price: "250€",
+        duration: "—",
+        image: profhiloImage
+      },
+      {
+        name: "Profhilo Structura",
+        description: "Versión avanzada de Profhilo que aporta firmeza y efecto tensor en zonas con pérdida de estructura facial, estimulando colágeno y elastina.",
+        price: "480€",
+        duration: "—",
+        image: profhiloImage
+      },
+      {
+        name: "Endolift",
+        description: "Procedimiento mínimamente invasivo con láser que reafirma, tensa y remodela los tejidos faciales y corporales desde el interior, estimulando colágeno y eliminando grasa localizada sin cirugía.",
+        price: "1450€",
+        duration: "—",
+        image: endoliftImage
       }
     ]
   },
