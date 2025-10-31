@@ -125,7 +125,7 @@ const TarjetasRegalo = () => {
                 {benefits.map((benefit, index) => (
                   <div
                     key={index}
-                    className="flex items-start gap-4 bg-secondary/15 rounded-xl p-6"
+                    className="flex items-start gap-4 bg-primary/30 rounded-xl p-6"
                   >
                     <div className="flex-shrink-0">
                       <div className="w-10 h-10 bg-secondary/10 rounded-full flex items-center justify-center">
