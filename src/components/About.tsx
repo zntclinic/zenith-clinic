@@ -17,7 +17,7 @@ export const About = () => {
 
         {/* Information Section */}
         <div className="flex flex-col justify-center">
-          <h2 className="font-playfair text-2xl md:text-3xl font-bold mb-6 text-foreground">
+          <h2 className="text-2xl md:text-3xl font-medium mb-6 text-foreground">
             EXPERIMENTA {businessInfo.name}
           </h2>
 

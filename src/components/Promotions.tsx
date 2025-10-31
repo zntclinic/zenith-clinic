@@ -22,7 +22,7 @@ export const Promotions = () => {
   return (
     <section className="py-16 bg-primary/30 relative overflow-hidden">
       <div className="container mx-auto px-4">
-        <h2 className="font-playfair text-4xl md:text-5xl font-bold text-center text-foreground mb-12 drop-shadow-sm">
+        <h2 className="text-4xl md:text-5xl font-medium text-center text-foreground mb-12 drop-shadow-sm">
           Promociones Actuales
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
@@ -33,7 +33,7 @@ export const Promotions = () => {
             >
               <div className="flex flex-col h-full">
                 <div className="text-center mb-4">
-                  <h3 className="font-playfair text-2xl font-bold text-secondary mb-2">
+                  <h3 className="text-2xl font-medium text-secondary mb-2">
                     {promo.title}
                   </h3>
                   <span className="bg-secondary/10 text-secondary text-sm font-semibold px-3 py-1 rounded-full">

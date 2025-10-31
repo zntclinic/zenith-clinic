@@ -126,14 +126,14 @@ export const Services = () => {
 
                         {/* Hover overlay with semi-transparent white background and details */}
                         <div className="absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-center p-6">
-                          <h4 className="font-playfair text-xl font-bold text-foreground mb-3">
+                          <h4 className="text-xl font-medium text-foreground mb-3">
                             {treatment.name}
                           </h4>
                           <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                             {treatment.description}
                           </p>
                           <div className="flex items-center justify-between mb-4">
-                            <div className="text-2xl font-bold text-secondary">
+                            <div className="text-2xl font-medium text-secondary">
                               {treatment.price}
                             </div>
                             {treatment.duration && (

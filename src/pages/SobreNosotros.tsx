@@ -42,7 +42,7 @@ const SobreNosotros = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
+              <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-8 text-center">
                 Nuestra Historia
               </h2>
               <div className="prose prose-lg max-w-none">
@@ -61,7 +61,7 @@ const SobreNosotros = () => {
         <section className="py-16 bg-primary/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
+              <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-8 text-center">
                 La Filosofía de Zenith Clinic
               </h2>
               <div className="bg-white rounded-2xl p-8 md:p-10 shadow-lg">
@@ -77,7 +77,7 @@ const SobreNosotros = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
+              <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-12 text-center">
                 Nuestra Clínica
               </h2>
               <ImageGallery

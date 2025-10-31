@@ -52,7 +52,7 @@ const TarjetasRegalo = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-6">
+              <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-6">
                 El Regalo Perfecto
               </h2>
               <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-8">
@@ -68,7 +68,7 @@ const TarjetasRegalo = () => {
         <section className="py-16 bg-primary/30">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
+              <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-12 text-center">
                 Elige el Importe
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -80,7 +80,7 @@ const TarjetasRegalo = () => {
                   >
                     {card.popular && (
                       <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                        <span className="bg-secondary text-secondary-foreground text-xs font-bold px-4 py-1 rounded-full">
+                        <span className="bg-secondary text-secondary-foreground text-xs font-medium px-4 py-1 rounded-full">
                           Más Popular
                         </span>
                       </div>
@@ -89,7 +89,7 @@ const TarjetasRegalo = () => {
                       <div className="mb-4">
                         <Sparkles className="w-12 h-12 text-secondary mx-auto" />
                       </div>
-                      <div className="font-playfair text-5xl font-bold text-foreground mb-2">
+                      <div className="text-5xl font-medium text-foreground mb-2">
                         {card.amount}€
                       </div>
                       <p className="text-muted-foreground text-sm mb-6">
@@ -118,7 +118,7 @@ const TarjetasRegalo = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
+              <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-12 text-center">
                 Ventajas de Nuestras Tarjetas
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -144,16 +144,16 @@ const TarjetasRegalo = () => {
         <section className="py-16 bg-primary/30">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
+              <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-12 text-center">
                 ¿Cómo Funciona?
               </h2>
               <div className="space-y-8">
                 <div className="flex items-start gap-6">
-                  <div className="flex-shrink-0 w-12 h-12 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center font-bold text-xl">
+                  <div className="flex-shrink-0 w-12 h-12 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center font-medium text-xl">
                     1
                   </div>
                   <div>
-                    <h3 className="font-playfair text-xl font-bold text-foreground mb-2">
+                    <h3 className="text-xl font-medium text-foreground mb-2">
                       Elige el importe
                     </h3>
                     <p className="text-muted-foreground">
@@ -162,11 +162,11 @@ const TarjetasRegalo = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-6">
-                  <div className="flex-shrink-0 w-12 h-12 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center font-bold text-xl">
+                  <div className="flex-shrink-0 w-12 h-12 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center font-medium text-xl">
                     2
                   </div>
                   <div>
-                    <h3 className="font-playfair text-xl font-bold text-foreground mb-2">
+                    <h3 className="text-xl font-medium text-foreground mb-2">
                       Contáctanos
                     </h3>
                     <p className="text-muted-foreground">
@@ -175,11 +175,11 @@ const TarjetasRegalo = () => {
                   </div>
                 </div>
                 <div className="flex items-start gap-6">
-                  <div className="flex-shrink-0 w-12 h-12 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center font-bold text-xl">
+                  <div className="flex-shrink-0 w-12 h-12 bg-secondary text-secondary-foreground rounded-full flex items-center justify-center font-medium text-xl">
                     3
                   </div>
                   <div>
-                    <h3 className="font-playfair text-xl font-bold text-foreground mb-2">
+                    <h3 className="text-xl font-medium text-foreground mb-2">
                       Recoge tu Tarjeta
                     </h3>
                     <p className="text-muted-foreground">
@@ -197,7 +197,7 @@ const TarjetasRegalo = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <Heart className="w-16 h-16 text-secondary mx-auto mb-6" />
-              <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-6">
+              <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-6">
                 ¿Listo para hacer un Regalo Especial?
               </h2>
               <p className="text-muted-foreground text-lg mb-8">

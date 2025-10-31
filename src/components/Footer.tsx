@@ -35,7 +35,7 @@ export const Footer = () => {
 
           {/* Other Links */}
           <div className="flex flex-col items-start">
-            <h3 className="text-xl font-bold text-white mb-4">Otros enlaces</h3>
+            <h3 className="text-xl font-medium text-white mb-4">Otros enlaces</h3>
             <div className="space-y-3">
               <Link to="/tarjetas-regalo" className="flex items-center gap-2 text-white/80 hover:text-white transition-colors">
                 <svg className="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 24 24">
@@ -54,7 +54,7 @@ export const Footer = () => {
 
           {/* Contact Information */}
           <div className="flex flex-col items-start">
-            <h3 className="text-xl font-bold text-white mb-4">Contacto</h3>
+            <h3 className="text-xl font-medium text-white mb-4">Contacto</h3>
             <div className="space-y-3">
               <div className="flex items-start gap-2 text-white/80">
                 <svg className="w-4 h-4 text-secondary mt-0.5" fill="currentColor" viewBox="0 0 24 24">

@@ -41,7 +41,7 @@ const Tratamientos = () => {
                 >
                   {/* Content - This ALONE defines the container height */}
                   <div className={`p-8 md:p-10 ${index % 2 === 0 ? 'md:ml-[50%]' : 'md:mr-[50%]'}`}>
-                    <h2 className="font-playfair text-2xl md:text-3xl font-bold text-foreground mb-4">
+                    <h2 className="text-2xl md:text-3xl font-medium text-foreground mb-4">
                       {treatment.title}
                     </h2>
                     <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
