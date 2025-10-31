@@ -1,4 +1,4 @@
-import masajeImage from "@/assets/masajes/masaje.jpg";
+
 import masajesImage from "@/assets/masajes/masajes.jpeg";
 import facialesImage from "@/assets/faciales/faciales.jpeg";
 import microImage from "@/assets/micropigmentacion/micropigmentacion.jpeg";
