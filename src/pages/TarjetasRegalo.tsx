@@ -75,9 +75,8 @@ const TarjetasRegalo = () => {
                 {giftCardAmounts.map((card) => (
                   <div
                     key={card.amount}
-                    className={`relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 ${
-                      card.popular ? 'ring-2 ring-primary' : ''
-                    }`}
+                    className={`relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 ${card.popular ? 'ring-2 ring-primary' : ''
+                      }`}
                   >
                     {card.popular && (
                       <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
@@ -155,7 +154,7 @@ const TarjetasRegalo = () => {
                   </div>
                   <div>
                     <h3 className="font-playfair text-xl font-bold text-foreground mb-2">
-                      Elige el Importe
+                      Elige el importe
                     </h3>
                     <p className="text-muted-foreground">
                       Selecciona el valor de la tarjeta regalo o solicita un importe personalizado.
@@ -199,7 +198,7 @@ const TarjetasRegalo = () => {
             <div className="max-w-3xl mx-auto text-center">
               <Heart className="w-16 h-16 text-primary mx-auto mb-6" />
               <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-6">
-                ¿Listo para Hacer un Regalo Especial?
+                ¿Listo para hacer un Regalo Especial?
               </h2>
               <p className="text-muted-foreground text-lg mb-8">
                 Contáctanos hoy mismo y prepararemos tu tarjeta regalo personalizada
@@ -215,7 +214,7 @@ const TarjetasRegalo = () => {
                   onClick={() => window.location.href = `tel:${businessInfo.contact.phone}`}
                   className="bg-white hover:bg-gray-50 text-foreground font-semibold py-4 px-8 rounded-lg transition-colors duration-200 text-lg border-2 border-gray-200"
                 >
-                  Llamar Ahora
+                  Llamar ahora
                 </button>
               </div>
             </div>

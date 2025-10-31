@@ -33,18 +33,30 @@ const Tratamientos = () => {
         {/* Treatments Section */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
-            <div className="max-w-5xl mx-auto space-y-12">
+            <div className="max-w-6xl mx-auto space-y-12">
               {treatments.map((treatment, index) => (
                 <div
                   key={index}
-                  className="bg-gray-50 rounded-2xl p-8 md:p-10 hover:shadow-lg transition-shadow duration-300"
+                  className="bg-gray-50 rounded-2xl overflow-hidden hover:shadow-lg transition-shadow duration-300 relative"
                 >
-                  <h2 className="font-playfair text-2xl md:text-3xl font-bold text-foreground mb-4">
-                    {treatment.title}
-                  </h2>
-                  <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-                    {treatment.description}
-                  </p>
+                  {/* Content - This ALONE defines the container height */}
+                  <div className={`p-8 md:p-10 ${index % 2 === 0 ? 'md:ml-[50%]' : 'md:mr-[50%]'}`}>
+                    <h2 className="font-playfair text-2xl md:text-3xl font-bold text-foreground mb-4">
+                      {treatment.title}
+                    </h2>
+                    <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                      {treatment.description}
+                    </p>
+                  </div>
+
+                  {/* Image - Absolutely positioned to fill its half space completely */}
+                  <div className={`h-64 md:absolute md:top-0 md:bottom-0 md:h-full md:w-[50%] ${index % 2 === 0 ? 'md:left-0' : 'md:right-0'}`}>
+                    <img
+                      src={treatment.image}
+                      alt={treatment.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               ))}
             </div>
