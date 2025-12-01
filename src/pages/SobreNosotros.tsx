@@ -47,7 +47,7 @@ const SobreNosotros = () => {
               </h2>
               <div className="prose prose-lg max-w-none">
                 <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-6">
-                  Zenith Clinic nació de la pasión por elevar la belleza y el bienestar a su punto más alto. Apasionados por la estética y el equilibrio interior, entendimos que la verdadera transformación va más allá de lo superficial: nace del cuidado integral de cuerpo, mente y piel.
+                  Zenith Beauty nació de la pasión por elevar la belleza y el bienestar a su punto más alto. Apasionados por la estética y el equilibrio interior, entendimos que la verdadera transformación va más allá de lo superficial: nace del cuidado integral de cuerpo, mente y piel.
                 </p>
                 <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
                   Inspirados por la innovación y la cosmética natural de alta calidad, creamos el espacio que deseábamos encontrar —un lugar donde cada detalle está pensado para realzar tu belleza auténtica y acompañarte hacia tu mejor versión.
@@ -62,10 +62,10 @@ const SobreNosotros = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-8 text-center">
-                La Filosofía de Zenith Clinic
+                La Filosofía de Zenith Beauty
               </h2>
               <p className="text-foreground text-base md:text-lg leading-relaxed text-center">
-                En Zenith Clinic creemos que la belleza auténtica nace del equilibrio entre la ciencia y la sensibilidad. Nuestra filosofía une tecnología avanzada, cosmética natural y un enfoque humano que entiende cada piel como única. Buscamos resultados visibles, sí, pero también una experiencia que inspire bienestar, confianza y armonía interior.
+                En Zenith Beauty creemos que la belleza auténtica nace del equilibrio entre la ciencia y la sensibilidad. Nuestra filosofía une tecnología avanzada, cosmética natural y un enfoque humano que entiende cada piel como única. Buscamos resultados visibles, sí, pero también una experiencia que inspire bienestar, confianza y armonía interior.
               </p>
             </div>
           </div>
@@ -76,7 +76,7 @@ const SobreNosotros = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-12 text-center">
-                Nuestra Clínica
+                Nuestro Centro
               </h2>
               <ImageGallery
                 images={[
@@ -89,7 +89,7 @@ const SobreNosotros = () => {
                   { src: clinica7Image, title: 'Cabina de tratamientos corporales' },
 
                 ]}
-                altText="Zenith Clinic - Instalaciones"
+                altText="Zenith Beauty - Instalaciones"
               />
             </div>
           </div>

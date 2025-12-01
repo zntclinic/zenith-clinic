@@ -16,7 +16,7 @@ export interface Treatment {
 export const treatments: Treatment[] = [
   {
     title: "Estética Avanzada",
-    description: "Rituales creados para cuidar tu piel y renovar tus sentidos. En Zenith Clinic trabajamos con cosmética natural de alta calidad y técnicas personalizadas que aportan bienestar, luminosidad y firmeza. Disfruta de nuestros masajes relajantes, envolturas, exfoliaciones y tratamientos faciales y corporales diseñados para equilibrar cuerpo y mente, potenciando tu belleza de forma saludable y consciente.",
+    description: "Rituales creados para cuidar tu piel y renovar tus sentidos. En Zenith Beauty trabajamos con cosmética natural de alta calidad y técnicas personalizadas que aportan bienestar, luminosidad y firmeza. Disfruta de nuestros masajes relajantes, envolturas, exfoliaciones y tratamientos faciales y corporales diseñados para equilibrar cuerpo y mente, potenciando tu belleza de forma saludable y consciente.",
     image: medicinaEsteticaImage
   },
   {
@@ -36,7 +36,7 @@ export const treatments: Treatment[] = [
   },
   {
     title: "Tatuaje – Línea Fina",
-    description: "El arte más sutil sobre tu piel. En Zenith Clinic somos especialistas en tatuajes de línea fina, una técnica delicada que combina precisión, estética y personalidad. Diseñamos piezas exclusivas con trazos elegantes y minimalistas, ideales para quienes buscan un detalle con significado y distinción.",
+    description: "El arte más sutil sobre tu piel. En Zenith Beauty somos especialistas en tatuajes de línea fina, una técnica delicada que combina precisión, estética y personalidad. Diseñamos piezas exclusivas con trazos elegantes y minimalistas, ideales para quienes buscan un detalle con significado y distinción.",
     image: tatuajeImage
   },
   {
