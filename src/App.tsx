@@ -8,6 +8,8 @@ import Tratamientos from "./pages/Tratamientos";
 import SobreNosotros from "./pages/SobreNosotros";
 import TarjetasRegalo from "./pages/TarjetasRegalo";
 import NotFound from "./pages/NotFound";
+import SnowEffect from "./components/SnowEffect";
+import HolidayMessage from "./components/HolidayMessage";
 
 // Component to scroll to top on route change
 const ScrollToTop = () => {
@@ -27,6 +29,8 @@ const App = () => (
   <TooltipProvider>
     <Toaster />
     <Sonner />
+    <SnowEffect />
+    <HolidayMessage />
     <BrowserRouter basename="/">
       <ScrollToTop />
       <Routes>
