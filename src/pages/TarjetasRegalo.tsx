@@ -170,7 +170,7 @@ const TarjetasRegalo = () => {
                       Contáctanos
                     </h3>
                     <p className="text-muted-foreground">
-                      Ponte en contacto con nosotros por WhatsApp, teléfono o visítanos en el centro.
+                      Ponte en contacto con nosotros por WhatsApp, teléfono o visítanos en la clínica.
                     </p>
                   </div>
                 </div>
