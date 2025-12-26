@@ -210,7 +210,7 @@ export const serviceCategories: ServiceCategory[] = [
       },
       {
         name: "Exfoliación + Envoltura + Masaje",
-        description: "Tratamiento completo que combina exfoliación, envoltura corporal y masaje relajante para una experiencia de spa completa.",
+        description: "Tratamiento completo que combina exfoliación, envoltura corporal y masaje relajante.",
         price: "110€",
         duration: "90 min",
         image: masajeCompletoImage
@@ -374,7 +374,7 @@ export const serviceCategories: ServiceCategory[] = [
         duration: "30 min"
       },
       {
-        name: "BRAZOS",
+        name: "Brazos",
         description: "Depilación láser de brazos completos para eliminar el vello de antebrazos y brazos superiores.",
         price: "40€",
         duration: "30 min"
@@ -399,7 +399,7 @@ export const serviceCategories: ServiceCategory[] = [
         duration: "15 min"
       },
       {
-        name: "FIANZA MICROPIGMENTACIÓN",
+        name: "Fianza Micropigmentación",
         description: "Fianza para reservar tu cita de micropigmentación.",
         price: "50€",
         duration: "5 min"
@@ -832,7 +832,7 @@ export const serviceCategories: ServiceCategory[] = [
     ]
   },
   {
-    category: "Nutrición Y Bienestar",
+    category: "Nutrición y Bienestar",
     image: nutricionImage,
     treatments: [
       {
