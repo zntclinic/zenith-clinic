@@ -33,7 +33,7 @@ export interface BusinessInfo {
 
 export const businessInfo: BusinessInfo = {
   name: "ZENITH CLINIC",
-  tagline: "Clínica de Medicina Estética en Ourense",
+  tagline: "Centro de Estética en Ourense",
   address: {
     street: "Av. da Habana 26",
     city: "Ourense",

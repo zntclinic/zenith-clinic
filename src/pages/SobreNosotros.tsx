@@ -76,7 +76,7 @@ const SobreNosotros = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-12 text-center">
-                Nuestra Clínica
+                Nuestro Centro
               </h2>
               <ImageGallery
                 images={[
